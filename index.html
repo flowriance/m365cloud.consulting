@@ -1,42 +1,180 @@
-<!DOCTYPE HTML>
-<!-- THE DOCTYPE tells the browser what type of webpage to render, the doctype used in this website is HTML5 which is the most recent HTML. -->
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>My Pimpin Website</title>
-	<!-- THE TITLE element is the name of the page, it is also visible in the browser tab. Its always good practice to give each page an appropriate title. -->
-	<meta name="description" content="A sample website, nothin fancy">
-      <meta http-equiv="author" content="Francisco Campos Arias">
-      <meta name="keywords" content="html, css, web, design, sample, practice">
-      <!-- These are META TAGS, they're used to describe the website, this information is read mainly by search engines like GOOGLE, YAHOO, ETC... -->	
-	<link rel="stylesheet" href="style.css">
-	<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+	<title>Minimal Resume Template</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
 	<div class="container">
-<!-- THIS ACTUAL CONTENT BEGINS HERE...this is called a comment. which can only be seen when viewing the source code. This text CANNOT be seen by the browser. Its helpful when you need to place notes, comments or reminders in your code -->
-	<header>
-		<div class="header">
-			<h1>Welcome</h1>
+		<div class="hero">
+			<h1 class="name"><strong>Abbie</strong> Bradley</h1>
+			<span class="job-title">Developer</span>
+			<span class="email">abbie.bradley@gmail.com</span>
+
+			<h2 class="lead">Development and design of web applications 
+for startups and large companies</h2>
 		</div>
-	</header>
-	<!-- END HEADER | the header element in new to HTML5 -->
-		<div class="main">
-			<h2>This is just an example with some web content. This is the Hero Unit.</h2>
-		</div>
-		<div class="feature">
-			<h3>Featured Content 1</h3>
-			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum.</p>
-			<!-- LOREM IPSUM is universally used. Lorem ipsum is dummy text, it does't really mean anything. Its used to fill space or for mockups. -->
-		</div>
-		<div class="feature">
-			<h3>Featured Content 2</h3>
-			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor.</p>
-		</div>
-	<footer>
-		&copy;2012 Francisco Campos Arias, All Rigts Reserved.
-	</footer>
-	<!-- END FOOTER | the footer element is also new to HTML5 -->
 	</div>
+
+<!-- Skills and intrest section -->
+	<div class="container">
+
+		<div class="sections">
+			<h2 class="section-title">Skills</h2>
+
+			<div class="list-card">
+				<span class="exp">+ 5 years</span>
+				<div>
+					<h3>Object programming & frameworks</h3>
+					<span>PHP, Symfony, Laravel, Silex, …</span>
+				</div>
+			</div>
+			
+			<div class="list-card">
+				<span class="exp">+ 3 years</span>
+				<div>
+					<h3>Design integration</h3>
+					<span>Style and tools, JS Frameworks</span>
+				</div>
+			</div>	
+					
+			<div class="list-card">
+				<span class="exp">+ 6 years</span>
+				<div>
+					<h3>Linux</h3>
+					<span>Scripting, Servers management and protocols, Automation</span>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="sections">
+				<h2 class="section-title">Interests</h2>
+				
+				<div class="list-card">
+					<div>
+						<h3>Scripting languages</h3>
+						<span>PHP, JS, Bash, Python</span>
+					</div>
+				</div>	
+
+				<div class="list-card">
+					<div>
+						<h3>Hacking</h3>
+						<span>Linux, Crawlers, Bots, Network</span>
+					</div>
+				</div>		
+		</div>
+	</div>
+
+	<!-- Achievements -->
+
+	<div class="container cards">
+		
+		<div class="card">
+			<div class="skill-level">
+				<span>+</span>
+				<h2>60</h2>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Projects</h3>
+				<span>Adapting and creating solutions for customer's needs</span>
+			</div>
+		</div>
+
+			
+		<div class="card">
+			<div class="skill-level">
+				<h2>50</h2>
+				<span>%</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Web</h3>
+				<span>Applications development integrating third-party services and mobile client(s)</span>
+			</div>
+		</div>
+
+			
+		<div class="card">
+			<div class="skill-level">
+				<h2>30</h2>
+				<span>%</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Technical solutions</h3>
+				<span>Such as web services, scripts, configurations</span>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="skill-level">
+				<h2>20</h2>
+				<span>%</span>
+			</div>
+
+			<div class="skill-meta">
+				<h3>Leading</h3>
+				<span>Web projects and ensure the quality of delivery</span>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Timeeline -->
+
+	<div class="container">
+		<ol class="timeline">
+		  <li>
+		    <p class="line">Experiences</p>
+		    <span class="point"></span>
+		    <p class="description">
+		      Lead Developer @Geronimo
+		    </p>
+		    <span class="date">Today - Apr. 2016</span>
+		  </li>
+
+		  <li>
+		    <span class="point"></span>
+		    <p class="description">
+		      Freelance
+		    </p>
+		    <span class="date">Apr. 2016 - Sep. 2015</span>
+		  </li>
+
+		  		  <li>
+		    <p class="line">Education</p>
+		    <span class="point"></span>
+		    <p class="description">
+		      DUT "Métiers du multimédia et de l'internet"
+		    </p>
+		    <span class="date">2015 - 2013</span>
+		  </li>
+
+		  		  <li>
+		    <span class="point"></span>
+		    <p class="description">
+		      Art & Design studies
+		    </p>
+		    <span class="date">2013 - 2008</span>
+		  </li>
+		</ol>
+
+	</div>
+
+
+	<br><br>
+
+
+	<footer class="container">
+		<span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>
+	</footer>
+
+
 </body>
 </html>
