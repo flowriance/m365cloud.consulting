@@ -1,227 +1,211 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>M365 Cloud Consulting</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
 
-  <body>
+<head>
+  <title>M365 Cloud Consulting</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <style>
+    .profile {
+      flex: 0 0 auto;
+    }
+
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+      object-position: center;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px #333;
+    }
+
+    .info-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .info {
+      flex: 1 1 auto;
+      margin-left: 20px;
+    }
+
+    .name {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .email {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+  </style>
+
+  <div class="container">
+    <div class="hero">
+      <div class="info-container">
+        <div class="profile">
+          <img src="Profile.jfif" alt="Profile Image" class="profile-image" />
+        </div>
+        <div class="info">
+          <h1 class="name"><strong>Florian</strong> Christof</h1>
+          <span class="job-title">Cloud Specialist</span>
+          <span class="email">florian.christof@gmx.de</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills and interest section -->
+  <div class="container">
+    <div class="sections">
+      <h2 class="section-title">Qualifications</h2>
+
+      <div class="list-card">
+        <span class="exp">+ 3 years</span>
+        <div>
+          <h3>Consulting</h3>
+          <span>Requirements Engineering, Project Management, Rollout
+            Coordination and Project Execution</span>
+        </div>
+      </div>
+      <div class="list-card">
+        <span class="exp">+ 10 years</span>
+        <div>
+          <h3>IT-Development</h3>
+          <span>
+            Software & Hardware Programming, Platform-Administration
+          </span>
+        </div>
+      </div>
+    </div>
     <style>
-      .profile {
-        flex: 0 0 auto;
-      }
-
-      .profile-image {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin-right: 20px;
-        object-fit: cover;
-        object-position: center;
-        border: 3px solid #fff;
-        box-shadow: 0 0 0 3px #333;
-      }
-
-      .info-container {
-        display: flex;
-        align-items: center;
-      }
-
-      .info {
-        flex: 1 1 auto;
-      }
-
-      .name {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-      }
-
-      .job-title {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-      .email {
-        display: block;
-        margin-bottom: 20px;
-        font-size: 1.2rem;
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 30px;
       }
     </style>
+    <div class="sections">
+      <h2 class="section-title">Technologies</h2>
 
-    <div class="container">
-      <div class="hero">
-        <div class="info-container">
-          <div class="profile">
-            <img src="Profile.jfif" alt="Profile Image" class="profile-image" />
-          </div>
-          <div class="info">
-            <h1 class="name"><strong>Florian</strong> Christof</h1>
-            <span class="job-title">Specialist</span>
-            <span class="email">florian.christof@gmx.de</span>
-          </div>
+      <div class="list-card">
+        <img src="microsoft-logo.png" alt="Microsoft logo" class="logo" />
+        <div>
+          <h3>Microsoft 365</h3>
+          <span>
+            SharePoint Server, SharePoint Online, Teams, OneDrive,
+            PowerPlatform, Viva, etc.
+          </span>
+        </div>
+      </div>
+
+      <div class="list-card">
+        <img src="azure-logo.jfif" alt="Azure logo" class="logo" />
+        <div>
+          <h3>Microsoft Azure</h3>
+          <span>Active Directory, Database Development, Interface Programming,
+            Cloud Process Automation, etc.</span>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Skills and intrest section -->
-    <div class="container">
-      <div class="sections">
-        <h2 class="section-title">Qualifications</h2>
+  <!-- Achievements -->
 
-        <div class="list-card">
-          <span class="exp">+ 3 years</span>
-          <div>
-            <h3>Consulting</h3>
-            <span
-              >Requirements Engineering, Project Management, Rollout
-              Coordination and Project Execution</span
-            >
-          </div>
-        </div>
-        <div class="list-card">
-          <span class="exp">+ 10 years</span>
-          <div>
-            <h3>IT-Development</h3>
-            <span
-              >Software & Hardware Programming, Platform-Administration</span
-            >
-          </div>
-        </div>
+  <div class="container cards">
+    <div class="card">
+      <div class="skill-level">
+        <span>+</span>
+        <h2>60</h2>
       </div>
-      <style>
-        .logo {
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          width: 30px;
-        }
-      </style>
-      <div class="sections">
-        <h2 class="section-title">Technologies</h2>
 
-        <div class="list-card">
-          <img src="microsoft-logo.png" alt="Microsoft logo" class="logo" />
-          <div>
-            <h3>Microsoft 365</h3>
-            <span
-              >SharePoint Server, SharePoint Online, Teams, OneDrive,
-              PowerPlatform, Viva, etc.</span
-            >
-          </div>
-        </div>
-
-        <div class="list-card">
-          <img src="azure-logo.jfif" alt="Azure logo" class="logo" />
-          <div>
-            <h3>Microsoft Azure</h3>
-            <span
-              >Active Directory, Database Development, Interface Programming,
-              Cloud Process Automation, etc.</span
-            >
-          </div>
-        </div>
+      <div class="skill-meta">
+        <h3>Projects</h3>
+        <span>Adapting and creating solutions for customer's needs</span>
       </div>
     </div>
 
-    <!-- Achievements -->
-
-    <div class="container cards">
-      <div class="card">
-        <div class="skill-level">
-          <span>+</span>
-          <h2>60</h2>
-        </div>
-
-        <div class="skill-meta">
-          <h3>Projects</h3>
-          <span>Adapting and creating solutions for customer's needs</span>
-        </div>
+    <div class="card">
+      <div class="skill-level">
+        <h2>50</h2>
+        <span>%</span>
       </div>
 
-      <div class="card">
-        <div class="skill-level">
-          <h2>50</h2>
-          <span>%</span>
-        </div>
-
-        <div class="skill-meta">
-          <h3>Web</h3>
-          <span
-            >Applications development integrating third-party services and
-            mobile client(s)</span
-          >
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="skill-level">
-          <h2>30</h2>
-          <span>%</span>
-        </div>
-
-        <div class="skill-meta">
-          <h3>Technical solutions</h3>
-          <span>Such as web services, scripts, configurations</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="skill-level">
-          <h2>20</h2>
-          <span>%</span>
-        </div>
-
-        <div class="skill-meta">
-          <h3>Leading</h3>
-          <span>Web projects and ensure the quality of delivery</span>
-        </div>
+      <div class="skill-meta">
+        <h3>Web</h3>
+        <span>Applications development integrating third-party services and
+          mobile client(s)</span>
       </div>
     </div>
 
-    <!-- Timeeline -->
+    <div class="card">
+      <div class="skill-level">
+        <h2>30</h2>
+        <span>%</span>
+      </div>
 
-    <div class="container">
-      <ol class="timeline">
-        <li>
-          <p class="line">
-            <img src="Assets/Icons/school_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24" />
-          </p>
-          <span class="point"></span>
-          <p class="description">
-            B.Sc. Computer Science @<a
-              href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html"
-              >DHBW Karlsruhe</a
-            >
-            <br />/ Siemens AG
-          </p>
-          <span class="date">2016 - 2019</span>
-        </li>
-        <li>
-          <p class="line">
-            <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24" />
-          </p>
-          <span class="point"></span>
-          <p class="description">
-            (Junior) Consultant / <br />Consultant / <br />(Senior) Consultant
-          </p>
-          <span class="date">2019 - 2023</span>
-        </li>
-        <li>
-          <span class="point"></span>
-          <p class="description">Rollout Coordinator for Microsoft 365</p>
-          <span class="date">Feb. 2024 - March. 2023</span>
-        </li>
-        <li>
-          <span class="point"></span>
-          <p class="description">Freelance</p>
-          <span class="date">from March 2024</span>
-        </li>
-      </ol>
+      <div class="skill-meta">
+        <h3>Technical solutions</h3>
+        <span>Such as web services, scripts, configurations</span>
+      </div>
     </div>
-    <br /><br />
-    <footer class="container">
-      <!--<span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>-->
-    </footer>
-  </body>
+
+    <div class="card">
+      <div class="skill-level">
+        <h2>20</h2>
+        <span>%</span>
+      </div>
+
+      <div class="skill-meta">
+        <h3>Leading</h3>
+        <span>Web projects and ensure the quality of delivery</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Timeline -->
+
+  <div class="container">
+    <ol class="timeline">
+      <li>
+        <p class="line">
+          <img src="Assets/Icons/school_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24" />
+        </p>
+        <span class="point"></span>
+        <p class="description">B.Sc. Computer Science @<a href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html">DHBW Karlsruhe</a><br />/ Siemens AG </p>
+        <span class="date">2016 - 2019</span>
+      </li>
+      <li>
+        <p class="line">
+          <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24" />
+        </p>
+        <span class="point"></span>
+        <p class="description">(Junior) Consultant / <br />Consultant / <br />(Senior) Consultant</p>
+        <span class="date">2019 - 2023</span>
+      </li>
+      <li>
+        <span class="point"></span>
+        <p class="description">Rollout Coordinator for Microsoft 365</p>
+        <span class="date">2023 - 2024</span>
+      </li>
+      <li>
+        <span class="point"></span>
+        <p class="description">Freelance</p>
+        <span class="date">from March 2024</span>
+      </li>
+    </ol>
+  </div>
+  <br /><br />
+  <footer class="container">
+    <!--<span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>-->
+  </footer>
+</body>
+
 </html>
