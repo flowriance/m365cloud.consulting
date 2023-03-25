@@ -430,6 +430,9 @@ li .description {
 		right: 20px;
 		padding: 10px
 	}
+	.info-container {
+		max-width: 100%;
+	}
 
 	.lead {
 		margin-top: 15px;
