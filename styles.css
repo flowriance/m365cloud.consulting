@@ -431,7 +431,15 @@ li .description {
 		padding: 10px
 	}
 	.info-container {
-		max-width: 100%;
+		width: 100%;
+	}
+
+	.profile {
+		float: none;
+	}
+
+	.info {
+		float: none;
 	}
 
 	.lead {
@@ -448,5 +456,11 @@ li .description {
 	}
 	}
 
+	footer {
+		
+		width:100%;
+		min-height: 50px;
+		background-color: #31708F;
+	}
 
 /* End of all :P*/
