@@ -3,6 +3,7 @@
   <head>
     <title>M365 Cloud Consulting</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo/LogoFavicon.png" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -30,71 +31,34 @@
   <!-- Calendly badge widget end -->
 
   <body>
-    <style>
-      .profile {
-        flex: 0 0 auto;
-      }
+    <div class="header">
+      <a href="#default" class="logo"> <img src="Assets/Logo/LogoBanner.png" /></a>
+      <div class="header-right">
+        <a class="active" href="#technologies">Qualifications</a>
+        <a href="#FocusTopics">Focus Topics</a>
+        <a href="#meeting">Schedule a meeting!</a>
+      </div>
+    </div>
 
-      .profile-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        margin-right: 20px;
-        object-fit: cover;
-        object-position: center;
-        border: 3px solid #fff;
-        box-shadow: 0 0 0 3px #333;
-      }
-
-      .info-container {
-        display: contents;
-        align-items: center;
-      }
-
-      .info {
-        flex: 1 1 auto;
-        margin-left: 20px;
-      }
-
-      .name {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-      }
-
-      .email {
-        display: block;
-        margin-bottom: 20px;
-        font-size: 1.2rem;
-      }
-    </style>
-
-    <div class="container">
+    <div class="container" id="profile">
       <div class="hero">
-        <div class="info-container">
-          <div class="profile">
-            <img src="Profile.jfif" alt="Profile Image" class="profile-image" />
-          </div>
-          <div class="info">
-            <h1 class="name"><strong>Florian</strong> Christof</h1>
-            <span class="job-title">Cloud Specialist</span>
-            <span class="email">florian.christof@m365cloud.consulting</span>
-          </div>
-        </div>
+            <h1 class="name">Florian <strong>Christof</strong></h1>
+            <span class="job-title">Freelancer</span>
+            <span class="email">Your partner across the digital workplace</span>
       </div>
     </div>
 
     <!-- Skills and interest section -->
-    <div class="container">
+    <div class="container" id="technologies">
       <div class="sections">
         <h2 class="section-title">Qualifications</h2>
 
         <div class="list-card">
           <span class="exp">+ 3 years</span>
           <div>
-            <h3>Consulting</h3>
+            <h3>Digital Workplace Consulting</h3>
             <span>
-              Requirements Engineering, Project Management, Rollout
-              Coordination and Project Execution
+              Requirements Engineering, Project Management, Rollout Coordination and Project Execution
             </span>
           </div>
         </div>
@@ -103,7 +67,7 @@
           <div>
             <h3>IT-Development</h3>
             <span>
-              Software & Hardware Programming, Platform-Administration
+              Software & Hardware Programming, Platform Administration
             </span>
           </div>
         </div>
@@ -145,7 +109,7 @@
 
     <!-- Achievements -->
 
-    <div class="container cards">
+    <div class="container cards" id="FocusTopics">
       <div class="card">
         <div class="skill-level">
           <span>+</span>
@@ -200,9 +164,9 @@
 
     <!-- Timeline -->
 
-    <div class="container">
+    <div class="container" id="timeline">
+      <h2 class="section-title">Experience</h2>
       <ol class="timeline">
-        <h2 class="section-title">Experience</h2>
         <li>
           <p class="line">
             <img
@@ -257,13 +221,13 @@
     <br />
     <br />
 
-    <div class="container">
+    <div class="container" id="meeting">
       <h1 class="section-title">Schedule a meeting!</h1>
       <!-- Calendly inline widget begin -->
       <div
         class="calendly-inline-widget"
         data-url="https://calendly.com/florian-christof/30min?hide_event_type_details=1"
-        style="min-width: 320px; height: 630px"
+        style="min-width: 320px; height: 750px"
       ></div>
       <script
         type="text/javascript"
