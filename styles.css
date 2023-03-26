@@ -1,36 +1,217 @@
 /*Load google font*/
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@font-face { font-family: "Arvo-Regular"; src:  url("Assets/Fonts/Arvo/Arvo-Regular.ttf"); }
+@font-face { font-family: "Arvo-Italic"; src:  url("Assets/Fonts/Arvo/Arvo-Italic.ttf"); }
+@font-face { font-family: "Arvo-Bold"; src:  url("Assets/Fonts/Arvo/Arvo-Bold.ttf"); }
+@font-face { font-family: "Arvo-BoldItalic"; src:  url("Assets/Fonts/Arvo/Arvo-BoldItalic.ttf"); }
 
+@font-face { font-family: "NunitoSans-Black"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-Black.ttf"); }
+@font-face { font-family: "NunitoSans-BlackItalic"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-BlackItalic.ttf"); }
+@font-face { font-family: "NunitoSans-Bold"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-Bold.ttf"); }
+@font-face { font-family: "NunitoSans-BoldItalic"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-BoldItalic.ttf"); }
+@font-face { font-family: "NunitoSans-ExtraBold"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-ExtraBold.ttf"); }
+@font-face { font-family: "NunitoSans-ExtraBoldItalic"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-ExtraBoldItalic.ttf"); }
+@font-face { font-family: "NunitoSans-ExtraLight"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf"); }
+@font-face { font-family: "NunitoSans-ExtraLightItalic"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-ExtraLightItalic.ttf"); }
+@font-face { font-family: "NunitoSans-Italic"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-Italic.ttf"); }
+@font-face { font-family: "NunitoSans-Light"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-Light.ttf"); }
+@font-face { font-family: "NunitoSans-LightItalic"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-LightItalic.ttf"); }
+@font-face { font-family: "NunitoSans-Regular"; src:  url("Assets/Fonts/Nunito_Sans/NunitoSans-Regular.ttf"); }
 
+/* Begin of Header */
+
+/* Style the header with a grey background and some padding */
+.header {
+	overflow: hidden;
+	background-color: #fff;
+	padding: 20px 10px;
+	border-bottom: 1px #1f1f1f solid;
+  }
+  
+  /* Style the header links */
+  .header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	width: fit-content;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+	background-color: dodgerblue;
+	color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+	float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 800px) {
+	.header a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.header-right {
+	  float: none;
+	}
+  }
+
+/* End of Header */
 
 /* Reset Styles */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family: 'Arvo-Regular';
 	vertical-align: baseline;
 }
+
+.profile {
+	flex: 0 0 auto;
+  }
+
+  .profile-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-right: 20px;
+	object-fit: cover;
+	object-position: center;
+	border: 3px solid #fff;
+	box-shadow: 0 0 0 3px #333;
+  }
+
+  .name {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+  }
+
+  .email {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+  }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
-a{
+
+a {
 	text-decoration: none;
 	text-transform: none;
 	color: #4A90E2;
@@ -38,24 +219,32 @@ a{
 
 body {
 	line-height: 1;
-	font-family: lato, ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
-	text-rendering : optimizeLegibility;
-	-webkit-font-smoothing : antialiased;
+	font-family: "Arvo-Regular";
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 	font-size: 19px;
 	background-color: #FEFEFE;
 	color: #04143A;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -71,7 +260,8 @@ strong {
 	font-weight: 600;
 }
 
-div , footer {
+div,
+footer {
 	box-sizing: border-box;
 }
 
@@ -87,8 +277,17 @@ div , footer {
 }
 
 .hero {
-	margin: 50px auto; 
+	margin: 50px auto;
 	position: relative;
+
+	width: 98%;
+	height: 200px;
+	background-color: #EEF0F7;
+	display: inline-block;
+	margin: 7px 5px;
+	vertical-align: top;
+	border-radius: 10px;
+	padding: 50px
 }
 
 h1.name {
@@ -146,7 +345,8 @@ h1.name {
 	margin: 30px 0;
 }
 
-.list-card .exp , .list-card div{
+.list-card .exp,
+.list-card div {
 	display: inline-block;
 	vertical-align: top;
 }
@@ -199,7 +399,8 @@ h1.name {
 	padding-top: 50px
 }
 
-.card-active , .card:hover{
+.card-active,
+.card:hover {
 	transform: scale(1.02);
 	transition: 0.5s;
 	background-color: #fff;
@@ -245,7 +446,7 @@ h1.name {
 	margin-bottom: 5px;
 }
 
-.skill-meta span{
+.skill-meta span {
 	color: #81899C;
 	line-height: 20px;
 	font-size: 16px;
@@ -266,6 +467,7 @@ ol {
 	background: #EEF0F7;
 
 }
+
 ol::before,
 ol::after {
 	content: "";
@@ -274,18 +476,20 @@ ol::after {
 	display: block;
 	width: 0;
 	height: 0;
-  	border-radius: 10px;
+	border-radius: 10px;
 	border: 0px solid #31708F;
 }
+
 ol::before {
 	left: -5px;
 }
+
 ol::after {
 	right: -10px;
 	border: 0px solid transparent;
 	border-right: 0;
 	border-left: 20px solid #31708F;
-  	border-radius: 3px;
+	border-radius: 3px;
 }
 
 /* ---- Timeline elements ---- */
@@ -294,16 +498,18 @@ li {
 	display: inline-block;
 	float: left;
 	width: 25%;
-  	height: 50px;
+	height: 50px;
 }
+
 li .line {
-  position: absolute;
-  top: -47px;
-  left: 1%;
-  font-size: 20px;
-  font-weight: 600;
-  color: #04143A;
+	position: absolute;
+	top: -47px;
+	left: 1%;
+	font-size: 20px;
+	font-weight: 600;
+	color: #04143A;
 }
+
 li .point {
 	content: "";
 	top: -7px;
@@ -314,35 +520,37 @@ li .point {
 	border: 4px solid #fff;
 	border-radius: 10px;
 	background: #4A90E2;
-  position: absolute;
+	position: absolute;
 }
+
 li .description {
-  display: none;
-  padding: 10px 0;
-  margin-top: 20px;
-  position: relative;
-  font-weight: normal;
-  z-index: 1;
-  max-width: 95%;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 25px;
-  color: #5B6A9A;
+	display: none;
+	padding: 10px 0;
+	margin-top: 20px;
+	position: relative;
+	font-weight: normal;
+	z-index: 1;
+	max-width: 95%;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 25px;
+	color: #5B6A9A;
 }
+
 .description::before {
-  content: '';
-  width: 0; 
-  height: 0; 
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #f4f4f4;
-  position: absolute;
-  top: -5px;
-  left: 43%;
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #f4f4f4;
+	position: absolute;
+	top: -5px;
+	left: 43%;
 }
 
 
-.timeline .date{
+.timeline .date {
 	font-size: 14px;
 	color: #81899C;
 	font-weight: 300;
@@ -350,10 +558,11 @@ li .description {
 
 /* ---- Hover effects ---- */
 li:hover {
-  color: #48A4D2;
+	color: #48A4D2;
 }
+
 li .description {
-  display: block;
+	display: block;
 }
 
 /*timeline ends*/
@@ -362,21 +571,23 @@ li .description {
 
 /* Media queries*/
 
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
 	.container {
 		padding: 15px;
 		margin: 0px auto;
 	}
+
 	.cards {
 		margin-top: 250px;
 	}
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
 	.container {
 		padding: 15px;
 		margin: 0px auto;
 	}
+
 	.cards {
 		margin-top: 320px;
 	}
@@ -385,22 +596,25 @@ li .description {
 		padding: 15px;
 		text-align: left;
 	}
+
 	.card h2 {
 		font-size: 70px;
 	}
-		.card , .sections {
+
+	.card,
+	.sections {
 		width: 100%;
 		height: auto;
 		margin: 10px 0;
 		float: left;
 	}
 
-	.timeline{
+	.timeline {
 		border: none;
-		background-color: rgba(0,0,0,0);
+		background-color: rgba(0, 0, 0, 0);
 	}
 
-	.timeline li{
+	.timeline li {
 		margin-top: 70px;
 		height: 150px;
 	}
@@ -412,16 +626,17 @@ li .description {
 		font-size: 40px;
 	}
 
-	.card , .sections {
+	.card,
+	.sections {
 		width: 100%;
 		height: auto;
 		margin: 10px 0;
 		float: left;
 	}
 
-	.timeline{
+	.timeline {
 		display: none;
-		}
+	}
 
 	.job-title {
 		position: absolute;
@@ -430,6 +645,7 @@ li .description {
 		right: 20px;
 		padding: 10px
 	}
+
 	.info-container {
 		width: 100%;
 	}
@@ -447,20 +663,15 @@ li .description {
 		font-size: 20px;
 		line-height: 28px;
 	}
+
 	.container {
 		margin: 0px;
 		padding: 0 15px;
 	}
+
 	footer {
 		margin-top: 2050px;
 	}
-	}
-
-	footer {
-		
-		width:100%;
-		min-height: 50px;
-		background-color: #31708F;
-	}
+}
 
 /* End of all :P*/
