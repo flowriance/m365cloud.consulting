@@ -2,21 +2,17 @@
 <html>
   <head>
     <title>M365 Cloud Consulting</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/Assets/Logo/LogoFavicon.png" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" href="styles.css" rel="stylesheet">
+    <link type="image/x-icon" href="/Assets/Logo/LogoFavicon.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
 
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
   <!-- Calendly badge widget begin -->
-  <link
-    href="https://assets.calendly.com/assets/external/widget.css"
-    rel="stylesheet"
-  />
-  <script
-    src="https://assets.calendly.com/assets/external/widget.js"
-    type="text/javascript"
-    async
-  ></script>
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script type="text/javascript">
     window.onload = function () {
       Calendly.initBadgeWidget({
@@ -32,7 +28,7 @@
 
   <body>
     <div class="header">
-      <a href="#default" class="logo"> <img src="Assets/Logo/LogoBanner.png" /></a>
+      <a class="logo" href="#default"> <img src="Assets/Logo/LogoBanner.png" title="Logo M365Cloud.Consulting"></a>
       <div class="header-right">
         <a class="active" href="#technologies">Qualifications</a>
         <a href="#FocusTopics">Focus Topics</a>
@@ -40,13 +36,7 @@
       </div>
     </div>
 
-    <div class="container" id="profile">
-      <div class="hero">
-            <h1 class="name">Florian <strong>Christof</strong></h1>
-            <span class="job-title">Freelancer</span>
-            <span class="email">Your partner across the digital workplace</span>
-      </div>
-    </div>
+   
 
     <!-- Skills and interest section -->
     <div class="container" id="technologies">
@@ -84,7 +74,7 @@
         <h2 class="section-title">Technologies</h2>
 
         <div class="list-card">
-          <img src="microsoft-logo.png" alt="Microsoft logo" class="logo" />
+          <img class="logo" src="microsoft-logo.png" alt="Microsoft logo">
           <div>
             <h3>Microsoft 365</h3>
             <span>
@@ -95,7 +85,7 @@
         </div>
 
         <div class="list-card">
-          <img src="azure-logo.jfif" alt="Azure logo" class="logo" />
+          <img class="logo" src="azure-logo.jfif" alt="Azure logo">
           <div>
             <h3>Microsoft Azure</h3>
             <span>
@@ -130,10 +120,8 @@
 
         <div class="skill-meta">
           <h3>Web</h3>
-          <span
-            >Applications development integrating third-party services and
-            mobile client(s)</span
-          >
+          <span>Applications development integrating third-party services and
+            mobile client(s)</span>
         </div>
       </div>
 
@@ -162,6 +150,15 @@
       </div>
     </div>
 
+    <div class="container" id="profile">
+      <div class="hero">
+        <img class="profilePicture" src="/Assets/Pictures/Profile/Avatar_ProfilePicture.jpg" title="Florian C. - Profile Picture" alt="Profile Picture">
+        <h1 class="name">Florian <strong>Christof</strong></h1>
+        <span class="job-title">Freelancer</span>
+        <span class="email">Your partner across the digital workplace</span>
+      </div>
+    </div>
+
     <!-- Timeline -->
 
     <div class="container" id="timeline">
@@ -169,32 +166,21 @@
       <ol class="timeline">
         <li>
           <p class="line">
-            <img
-              src="Assets/Icons/school_FILL0_wght400_GRAD0_opsz48.svg"
-              height="24"
-              width="24"
-            />
+            <img src="Assets/Icons/school_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24">
           </p>
           <span class="point"></span>
           <p class="description">
-            B.Sc. Computer Science @<a
-              href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html"
-              >DHBW Karlsruhe</a
-            ><br />/ Siemens AG
+            B.Sc. Computer Science @<a href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html">DHBW Karlsruhe</a><br>/ Siemens AG
           </p>
           <span class="date">2016 - 2019</span>
         </li>
         <li>
           <p class="line">
-            <img
-              src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg"
-              height="24"
-              width="24"
-            />
+            <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24">
           </p>
           <span class="point"></span>
           <p class="description">
-            (Junior) Consultant / <br />Consultant / <br />(Senior) Consultant
+            (Junior) Consultant / <br>Consultant / <br>(Senior) Consultant
           </p>
           <span class="date">2019 - 2023</span>
         </li>
@@ -205,11 +191,7 @@
         </li>
         <li>
           <p class="line">
-            <img
-              src="Assets/Icons/store_FILL0_wght400_GRAD0_opsz48.svg"
-              height="24"
-              width="24"
-            />
+            <img src="Assets/Icons/store_FILL0_wght400_GRAD0_opsz48.svg" height="24" width="24">
           </p>
           <span class="point"></span>
           <p class="description">Freelance</p>
@@ -217,26 +199,18 @@
         </li>
       </ol>
     </div>
-    <br />
-    <br />
-    <br />
+    <br>
+    <br>
+    <br>
 
     <div class="container" id="meeting">
       <h1 class="section-title">Schedule a meeting!</h1>
       <!-- Calendly inline widget begin -->
-      <div
-        class="calendly-inline-widget"
-        data-url="https://calendly.com/florian-christof/30min?hide_event_type_details=1"
-        style="min-width: 320px; height: 750px"
-      ></div>
-      <script
-        type="text/javascript"
-        src="https://assets.calendly.com/assets/external/widget.js"
-        async
-      ></script>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/florian-christof/30min?hide_event_type_details=1" style="min-width: 320px; height: 750px"></div>
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
       <!-- Calendly inline widget end -->
     </div>
-    <br /><br />
+    <br><br>
     <footer class="container">
       <a>Datenschutz</a>
       <a>Impressum</a>

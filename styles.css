@@ -173,6 +173,17 @@ video {
 	flex: 0 0 auto;
   }
 
+  .profilePicture{
+	
+	display: block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	width: 180px;
+	margin-top: -140px;
+	border-radius: 50%;
+	border: #31708F solid 4px;
+  }
   .profile-image {
 	width: 100px;
 	height: 100px;
@@ -278,14 +289,12 @@ footer {
 
 .hero {
 	margin: 50px auto;
-	position: relative;
-
+	margin-top: 100px;
 	width: 98%;
-	height: 200px;
 	background-color: #EEF0F7;
 	display: inline-block;
-	margin: 7px 5px;
 	vertical-align: top;
+	text-align: center;
 	border-radius: 10px;
 	padding: 50px
 }
