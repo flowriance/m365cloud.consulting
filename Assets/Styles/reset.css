@@ -1,5 +1,8 @@
-/* Reset Styles */
 
+/* Reset Styles */
+html {
+    width: 100%;
+}
 html,
 body,
 div,

@@ -1,0 +1,51 @@
+/* Zusätzliche Regeln kleine Monitore  */
+
+@media screen and (max-width:450px) {
+    
+    h1.name {
+		font-size: 40px;
+	}
+
+	.card,
+	.sections {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		float: left;
+	}
+
+	.timeline {
+		display: none;
+	}
+
+	.job-title {
+		position: absolute;
+		font-size: 15px;
+		top: -40px;
+		right: 20px;
+		padding: 10px
+	}
+
+	.info-container {
+		width: 100%;
+	}
+
+	.profile {
+		float: none;
+	}
+
+	.info {
+		float: none;
+	}
+
+	.lead {
+		margin-top: 15px;
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.container {
+		margin: 0px;
+		padding: 0 15px;
+	}
+ }
