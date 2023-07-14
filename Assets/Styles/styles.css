@@ -568,5 +568,7 @@ li .description {
 	padding-bottom: 40px;
 }
 
-
+.timelineVertical{
+	display:none;
+}
 /* End of all :P*/
