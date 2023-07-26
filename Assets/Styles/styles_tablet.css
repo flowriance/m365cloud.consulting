@@ -17,9 +17,10 @@
 	}
 	.timelineVertical{
 		display:block;
-		width: 90%;
+		width: 50%;
+		margin: 0 auto;
 	}
-	
+
 	.timeline {
 		display: none;
 	}
