@@ -70,8 +70,11 @@
   <!-- Main hero / profile -->
   <div class="container" id="profile">
     <div class="hero">
-      <img class="profilePicture" src="/Assets/Pictures/Profile/Profile_picture.jpg"
-        title="Florian Zimmermann - Profile Picture" alt="Profile Picture">
+      <!-- Profile picture -->
+      <picture>
+        <source srcset="/Assets/Pictures/Profile/Profile_picture.webp" type="image/webp">
+        <img src="/Assets/Pictures/Profile/Profile_picture.jpg" alt="Profile Picture of Florian Zimmermann" width="180" height="180">
+      </picture>
       <h1 class="name">Florian <strong>Zimmermann</strong></h1>
       <span class="job-title">Freelance Microsoft 365 & Digital Workplace Consultant</span>
       <span class="email">Your partner across the digital workplace</span>
@@ -166,7 +169,10 @@
       <h2 class="section-title">Technologies</h2>
 
       <div class="list-card">
-        <img class="logo" src="/Assets/Pictures/microsoft-logo.png" alt="Microsoft logo">
+        <picture>
+          <source srcset="/Assets/Pictures/microsoft-logo.webp" type="image/webp">
+          <img class="logo" src="/Assets/Pictures/microsoft-logo.png" alt="Microsoft logo" width="30" height="30">
+        </picture>
         <div>
           <h3>Microsoft 365</h3>
           <span>
@@ -176,7 +182,10 @@
       </div>
 
       <div class="list-card">
-        <img class="logo" src="/Assets/Pictures/azure-logo.jfif" alt="Azure logo">
+        <picture>
+          <source srcset="/Assets/Pictures/azure-logo.webp" type="image/webp">
+          <img class="logo" src="/Assets/Pictures/azure-logo.jfif" alt="Azure logo" width="30" height="30">
+        </picture>
         <div>
           <h3>Microsoft Azure</h3>
           <span>
@@ -277,7 +286,10 @@
           <span class="date">From 2025</span>
         </li>
       </ol>
-      <img src="./Assets/Pictures/Timeline/Experience Timeline.png" class="timelineVertical" alt="Experience timeline overview" />
+      <picture>
+        <source srcset="./Assets/Pictures/Timeline/Experience Timeline.webp" type="image/webp">
+        <img src="./Assets/Pictures/Timeline/Experience Timeline.png" class="timelineVertical" alt="Experience Timeline visualization" width="100%" height="auto">
+      </picture>
     </div>
   </div>
 
