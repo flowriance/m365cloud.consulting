@@ -1,5 +1,170 @@
-/* Zusätzliche Regeln kleine Monitore  */
+/* Mobile Styles - max-width: 450px and below */
 
-@media screen and (max-width:450px) {
-    
- }
+/* Hero Section - Stack everything vertically */
+@media screen and (max-width: 450px) {
+  .hero {
+    padding: 1em !important;
+    margin-top: 20px !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  .hero-actions .btn,
+  .downloadCVButton button {
+    width: 100% !important;
+    justify-content: center !important;
+    margin: 0 !important;
+  }
+
+  h1.name {
+    font-size: 2.5rem !important;
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .job-title {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 12px 20px !important;
+    margin: 10px 0 !important;
+  }
+
+  .email {
+    font-size: 1.1rem !important;
+    text-align: center !important;
+  }
+}
+
+/* Sections - Full width on mobile */
+@media screen and (max-width: 450px) {
+  .sections {
+    width: 100% !important;
+    display: block !important;
+    margin: 20px 0 !important;
+  }
+
+  .list-card {
+    margin: 20px 0 !important;
+  }
+
+  .list-card .exp {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 8px !important;
+    text-align: center !important;
+  }
+
+  .list-card div {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}
+
+/* Services Cards - Stack single column */
+@media screen and (max-width: 450px) {
+  .cards {
+    display: block !important;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 15px 0 !important;
+    display: block !important;
+    text-align: center !important;
+    padding: 25px 20px !important;
+  }
+
+  .skill-meta {
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  .skill-meta h3 {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* Timeline - Vertical layout */
+@media screen and (max-width: 450px) {
+  ol.timeline {
+    margin: 40px 10px !important;
+  }
+
+  .timeline li {
+    width: 100% !important;
+    float: none !important;
+    margin-bottom: 30px !important;
+  }
+
+  .timeline li .description {
+    display: block !important;
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+
+  .timeline .date {
+    text-align: center !important;
+    display: block !important;
+    margin-top: 5px !important;
+  }
+
+  .timelineVertical {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+}
+
+/* Container & Typography */
+@media screen and (max-width: 450px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    margin-top: 20px !important;
+  }
+
+  .section-title {
+    font-size: 1.4rem !important;
+    text-align: center !important;
+  }
+
+  body {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+}
+
+/* Calendly - Full width */
+@media screen and (max-width: 450px) {
+  .calendly-inline-widget {
+    min-width: 100% !important;
+    height: 600px !important;
+  }
+}
+
+/* Footer - Stack */
+@media screen and (max-width: 450px) {
+  .footer .container {
+    text-align: center !important;
+    padding: 20px 15px !important;
+  }
+}
+
+/* Profile Picture - Ensure it stays perfect */
+@media screen and (max-width: 450px) {
+  .profilePicture {
+    margin-top: 0 !important;
+    width: 140px !important;
+    height: 140px !important;
+  }
+}
+
