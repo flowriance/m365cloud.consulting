@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>M365 Cloud Consulting</title>
+  <title>Florian Zimmermann – Microsoft 365 & Digital Workplace Consulting</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freelance Microsoft 365 & Digital Workplace consultant supporting modern workplace, tenant rollouts, automation and collaboration solutions.">
+
+  <link rel="canonical" href="https://www.m365cloud.consulting/">
+
+  <!-- Existing CSS dependencies (unchanged) -->
   <link type="text/css" href="/Assets/Styles/reset.css" rel="stylesheet">
   <link type="text/css" href="/Assets/Styles/styles.css" rel="stylesheet">
   <link type="text/css" href="/Assets/Styles/styles_tablet.css" rel="stylesheet">
   <link type="text/css" href="/Assets/Styles/styles_phone.css" rel="stylesheet">
-  <link type="image/x-icon" href="/Assets/Pictures/Logo/LogoFavicon.png" rel="icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link type="image/x-icon" href="/Assets/Pictures/Logo/LogoFavicon.png" rel="icon">
+
+  <!-- Font Awesome (existing) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Calendly badge widget begin -->
+  <!-- Social cards -->
+  <meta property="og:title" content="Florian Zimmermann – Microsoft 365 Consultant">
+  <meta property="og:description" content="Your partner across the digital workplace: Microsoft 365, Azure and Power Platform.">
+  <meta property="og:url" content="https://www.m365cloud.consulting/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Calendly badge widget (existing) -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script type="text/javascript">
@@ -27,32 +44,93 @@
     };
   </script>
   <!-- Calendly badge widget end -->
+
+  <!-- JSON-LD: Person + Service (no new external files) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Florian Zimmermann",
+    "jobTitle": "Microsoft 365 & Digital Workplace Consultant",
+    "url": "https://www.m365cloud.consulting/",
+    "image": "https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/florian-christof"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <!-- Header begin 
-  <div class="header">
-    <a class="logo" href="#default"> <img src="Assets/Pictures/Logo/LogoBanner.png" title="Logo M365Cloud.Consulting" /></a>
-    <div class="header-right">
-      <a class="active" href="#technologies">Qualifications</a>
-      <a href="#FocusTopics">Focus Topics</a>
-      <a href="#meeting">Schedule a meeting!</a>
-    </div>
-  </div>-->
 
-  
+  <!-- Main hero / profile -->
   <div class="container" id="profile">
-    <form class="downloadCVButton" method="get" action="./Assets/Documents/Florian Zimmermann - Portfolio EN.pdf">
-      <button class="btn"><i class="fa fa-download"></i>  Export CV</button>  
-    </form>
     <div class="hero">
       <img class="profilePicture" src="/Assets/Pictures/Profile/Profile_picture.jpg"
-        title="Florian C. - Profile Picture" alt="Profile Picture">
-        <h1 class="name">Florian <strong>Zimmermann</strong></h1>
-      <span class="job-title">IT-Consultant</span>
+        title="Florian Zimmermann - Profile Picture" alt="Profile Picture">
+      <h1 class="name">Florian <strong>Zimmermann</strong></h1>
+      <span class="job-title">Freelance Microsoft 365 & Digital Workplace Consultant</span>
       <span class="email">Your partner across the digital workplace</span>
+
+      <div class="hero-actions">
+        <form class="downloadCVButton" method="get" action="./Assets/Documents/Florian Zimmermann - Portfolio EN.pdf">
+          <button class="btn"><i class="fa fa-download"></i> Download CV (PDF)</button>
+        </form>
+        <a class="btn secondary" href="#meeting"><i class="fa fa-calendar"></i> Schedule a meeting</a>
+        <a class="btn linkedin" href="https://www.linkedin.com/in/florian-christof" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin"></i> View LinkedIn profile
+        </a>
+      </div>
     </div>
   </div>
+
+  <!-- Hero actions minimal inline styling (no new files) -->
+  <style>
+    .hero-actions {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .hero-actions .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn.secondary {
+      background-color: transparent;
+      border: 1px solid #0069ff;
+      color: #0069ff;
+    }
+    .btn.linkedin {
+      background-color: #0a66c2;
+      border: 1px solid #0a66c2;
+      color: #ffffff;
+    }
+    .btn.linkedin:hover {
+      background-color: #004182;
+      border-color: #004182;
+    }
+    @media (max-width: 600px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hero-actions .btn,
+      .downloadCVButton {
+        width: 100%;
+      }
+    }
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      width: 30px;
+    }
+  </style>
 
   <!-- Qualifications and Technologies section -->
   <div class="container" id="technologies">
@@ -64,28 +142,22 @@
         <div>
           <h3>Digital Workplace Consulting</h3>
           <span>
-            Requirements Engineering, Project Management, Rollout Coordination and Project Execution
+            Requirements engineering, project management, rollout coordination and project execution for Microsoft 365 based workplaces.
           </span>
         </div>
       </div>
+
       <div class="list-card">
         <span class="exp">+ 7 years</span>
         <div>
-          <h3>IT-Development</h3>
+          <h3>IT Development & Engineering</h3>
           <span>
-            Software & Hardware Programming, Platform Administration
+            Software and hardware development, platform administration and automation with a strong Microsoft cloud focus.
           </span>
         </div>
       </div>
     </div>
-    <style>
-      .logo {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 10px;
-        width: 30px;
-      }
-    </style>
+
     <div class="sections">
       <h2 class="section-title">Technologies</h2>
 
@@ -94,8 +166,7 @@
         <div>
           <h3>Microsoft 365</h3>
           <span>
-            SharePoint Server, SharePoint Online, Teams, OneDrive,
-            PowerPlatform, Viva, etc.
+            SharePoint Online, Teams, OneDrive, Exchange Online, Viva and compliance capabilities across the Microsoft 365 platform.
           </span>
         </div>
       </div>
@@ -105,152 +176,125 @@
         <div>
           <h3>Microsoft Azure</h3>
           <span>
-            Active Directory, Database Development, Interface Programming,
-            Cloud Process Automation, etc.
+            Azure Active Directory, application integration, databases and cloud automation to connect and extend Microsoft 365.
           </span>
         </div>
       </div>
     </div>
   </div>
-<!--
-  //Focus Topics section
-  <div class="container cards" id="FocusTopics">
-    <h2 class="section-title">Focus Topics</h2>
-    <div class="card">
-      <div class="skill-level">
-        <h2><img src="Assets/Icons/Topics/Intranet.svg" alt="" height="70" width="70"></h2>
-      </div>
 
+  <!-- Services section (reusing existing card/sections structure, no new files) -->
+  <div class="container cards" id="services">
+    <h2 class="section-title">Services & Focus Areas</h2>
+
+    <div class="card">
       <div class="skill-meta">
-        <h3>Intranet</h3>
-        <span>Build and improve intranet solutions based on SharePoint Online</span>
+        <h3>Modern Workplace & Intranet</h3>
+        <span>Design and improve intranet and collaboration solutions based on SharePoint Online and Microsoft Teams.</span>
       </div>
     </div>
 
     <div class="card">
-      <div class="skill-level">
-        <h2><img src="Assets/Icons/Topics/DocumentManagement.svg" alt="" height="70" width="70"></h2>
-      </div>
-
       <div class="skill-meta">
-        <h3>Document Management System (DMS)</h3>
-        <span>Create compliant solutions based on Microsoft Teams, Azure Information Protection, Retention Policies and more</span>
+        <h3>Document Management & Compliance</h3>
+        <span>Create compliant document management using Microsoft 365 features such as retention policies and secure sharing.</span>
       </div>
     </div>
 
     <div class="card">
-      <div class="skill-level">
-        <h2><img src="Assets/Icons/Topics/BPM.svg" alt="" height="70" width="70"></h2>
-      </div>
-
       <div class="skill-meta">
-        <h3>Business Process Manangement (BPM)</h3>
-        <span>Build complex business apps with low-code components from Microsoft PowerPlattform or Azure Apps</span>
+        <h3>Business Apps & Automation</h3>
+        <span>Build business applications and workflows with low-code components from Power Platform and Azure services.</span>
       </div>
     </div>
 
     <div class="card">
-      <div class="skill-level">
-        <h2><img src="Assets/Icons/Topics/Migration.svg" alt="" height="70" width="70"></h2>
-      </div>
-
       <div class="skill-meta">
-        <h3>Data Migration</h3>
-        <span>Move Data from On Premises Server solutions into the Microsoft Cloud</span>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="skill-level">
-        <h2><img src="Assets/Icons/Topics/interface.svg" alt="" height="70" width="70"></h2>
-      </div>
-
-      <div class="skill-meta">
-        <h3>Interface Development</h3>
-        <span>Connect your M365 tenant securely with your cloud infrasstructure</span>
+        <h3>M365 Rollout & Migration</h3>
+        <span>Plan and coordinate the move from on-premises environments into the Microsoft cloud and roll out M365 to users.</span>
       </div>
     </div>
 
     <div class="card">
-      <div class="skill-level">
-        <h2><img src="Assets/Icons/Topics/tool Evaluation.svg" alt="" height="70" width="70"></h2>
+      <div class="skill-meta">
+        <h3>Identity & Security</h3>
+        <span>Support secure tenant design, identity and access management and best practices for a resilient digital workplace.</span>
       </div>
+    </div>
 
+    <div class="card">
       <div class="skill-meta">
         <h3>Tool Evaluation</h3>
-        <span>Find the best 3rd party software extensions for your advanced business requirements across M365</span>
+        <span>Evaluate third-party add-ons and tools that complement Microsoft 365 for advanced business requirements.</span>
       </div>
     </div>
-
   </div>
--->
 
   <!-- Timeline section -->
-
   <div class="container" id="timeline">
     <h2 class="section-title">Experience</h2>
-   <div> <ol class="timeline">
-      <li>
-        <p class="line">
-          <img src="Assets/Icons/school_FILL0_wght400_GRAD0_opsz48.svg" alt="Educational experience" height="24" width="24">
-        </p>
-        <span class="point"></span>
-        <p class="description">
-          B.Sc. Computer Science @<a href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html">DHBW
-            Karlsruhe</a><br>/ Siemens AG
-        </p>
-        <span class="date">2016 - 2019</span>
-      </li>
-      <li>
-        <p class="line">
-          <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" alt="Work Experience" height="24" width="24">
-        </p>
-        <span class="point"></span>
-        <p class="description">
-          (Junior) Consultant / <br>Consultant / <br>(Senior) Consultant
-        </p>
-        <span class="date">2019 - 2023</span>
-      </li>
-      <li>
-        <span class="point"></span>
-        <p class="description">Rollout Coordinator for Microsoft 365</p>
-        <span class="date">2023 - 2025</span>
-      </li>
-      <li>
-        <p class="line">
-          <img src="Assets/Icons/store_FILL0_wght400_GRAD0_opsz48.svg" alt="Freelance experience" height="24" width="24">
-        </p>
-        <span class="point"></span>
-        <p class="description">Freelance</p>
-        <span class="date">From 2025</span>
-      </li>
-    </ol>
-    <img src="./Assets/Pictures/Timeline/Experience Timeline.png" class="timelineVertical" alt="Experience Timeline" />
+    <div>
+      <ol class="timeline" aria-label="Career and education timeline">
+        <li>
+          <p class="line">
+            <img src="Assets/Icons/school_FILL0_wght400_GRAD0_opsz48.svg" alt="Educational experience" height="24" width="24">
+          </p>
+          <span class="point"></span>
+          <p class="description">
+            B.Sc. Computer Science @ <a href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html" target="_blank" rel="noopener noreferrer">DHBW Karlsruhe</a><br>/ Siemens AG
+          </p>
+          <span class="date">2016 - 2019</span>
+        </li>
+        <li>
+          <p class="line">
+            <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" alt="Consulting experience" height="24" width="24">
+          </p>
+          <span class="point"></span>
+          <p class="description">
+            (Junior) Consultant / Consultant / (Senior) Consultant – Digital Workplace and Microsoft 365 projects.
+          </p>
+          <span class="date">2019 - 2023</span>
+        </li>
+        <li>
+          <span class="point"></span>
+          <p class="description">
+            Rollout Coordinator for Microsoft 365 – coordinating tenant rollout, adoption and communication across locations.
+          </p>
+          <span class="date">2023 - 2025</span>
+        </li>
+        <li>
+          <p class="line">
+            <img src="Assets/Icons/store_FILL0_wght400_GRAD0_opsz48.svg" alt="Freelance experience" height="24" width="24">
+          </p>
+          <span class="point"></span>
+          <p class="description">
+            Freelance Microsoft 365 & Digital Workplace Consultant – available for project work, interim roles and advisory.
+          </p>
+          <span class="date">From 2025</span>
+        </li>
+      </ol>
+      <img src="./Assets/Pictures/Timeline/Experience Timeline.png" class="timelineVertical" alt="Experience timeline overview" />
     </div>
   </div>
-  <br>
-  <br>
-  <br>
 
-  <!-- Schedule a meeting! section-->
+  <!-- Schedule a meeting! section (existing Calendly embed) -->
   <div class="container" id="meeting">
     <h1 class="section-title">Schedule a meeting!</h1>
-    <!-- Calendly inline widget begin -->
     <div class="calendly-inline-widget" data-url="https://calendly.com/florian-christof/30min?hide_event_type_details=1"
       style="min-width: 320px; height: 750px"></div>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <!-- Calendly inline widget end -->
   </div>
-  <br><br>
+
   <footer class="footer">
     <div class="container">
-      
-      <a href="./Assets/Sites/Datenschutz.html">Datenschutz</a>     |     <a href="./Assets/Sites/Impressum.html">Impressum</a>
+      <span>Contact: <a href="mailto:florian@m365cloud.consulting">florian@m365cloud.consulting</a> | 
+        <a href="https://www.linkedin.com/in/florian-christof" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </span>
+      <br>
+      <a href="./Assets/Sites/Datenschutz.html">Datenschutz</a> |
+      <a href="./Assets/Sites/Impressum.html">Impressum</a>
     </div>
-    
-    <!--<span style="font-size: 16px; margin-top: ">Coded by <a href="https://newtodesign.com/">New to design </a> Designed by <a href="https://dribbble.com/shots/4342703-Minimal-resume-freebie-for-junior-self-taught-people">Nicolas Meuzard</a></span>-->
   </footer>
-</body>
 
+</body>
 </html>
