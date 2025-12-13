@@ -20,9 +20,44 @@
 @font-face { font-family: "NunitoSans-LightItalic"; src: url("Assets/Fonts/Nunito_Sans/NunitoSans-LightItalic.ttf"); font-display: swap; }           /* unused */
 @font-face { font-family: "NunitoSans-Regular"; src: url("Assets/Fonts/Nunito_Sans/NunitoSans-Regular.ttf"); font-display: swap; }
 
+/* ========================================
+   DESKTOP TOP SPACING FIX - Prevents hero from touching browser top
+   ======================================== */
+
+/* Base body spacing */
+body {
+  padding-top: 25px !important;
+  margin-top: 0 !important;
+}
+
+/* Container spacing */
+.container {
+  margin-top: 50px !important;
+  padding-top: 20px !important;
+}
+
+/* Hero section positioning */
+.hero {
+  margin-top: 60px !important;
+  padding-top: 2.5em !important;
+}
+
+/* Desktop-specific (721px+) */
+@media screen and (min-width: 721px) {
+  body {
+    padding-top: 30px !important;
+  }
+  
+  .container:first-of-type {
+    margin-top: 70px !important;
+  }
+  
+  #profile .hero {
+    margin-top: 80px !important;
+  }
+}
 
 /* Header */
-
 .header {
   overflow: hidden;
   background-color: #fff;
