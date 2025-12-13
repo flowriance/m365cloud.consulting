@@ -1,3 +1,36 @@
+/* ========================================
+   OVERRIDE RESET.CSS - Force top spacing
+   Must be FIRST rule to beat reset.css
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding-top: 25px !important;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 40px !important;
+  margin-top: 0 !important;
+  min-height: 100vh;
+}
+
+/* Ensure first container has proper spacing */
+.container {
+  margin-top: 30px !important;
+  padding-top: 25px !important;
+}
+
+/* Hero section - Desktop positioning */
+#profile .hero {
+  margin-top: 50px !important;
+  padding-top: 2em !important;
+}
+
+
 /* Load core fonts - font-display: swap ensures text displays immediately */
 
 /* Arvo family */
