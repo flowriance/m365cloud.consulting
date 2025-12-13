@@ -771,26 +771,109 @@ body {
 }
 
 /* ========================================
-   PROFESSIONAL NEUTRAL COLOR SYSTEM
+   COLOR SYSTEM
    ======================================== */
 :root {
-  --primary-blue: var(--color-primary);
-  --primary-dark: var(--color-primary-active);
-  --primary-light: var(--color-secondary);
-  --linkedin-blue: #0A66C2;
-  --neutral-900: var(--color-text);
-  --neutral-600: var(--color-text-secondary);
-  --neutral-500: var(--color-text-secondary);
-  --neutral-400: var(--color-border);
-  --surface: var(--color-surface);
-  --surface-hover: var(--color-secondary-hover);
-  --white: var(--color-cream-100);
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --border: var(--color-border);
+  /* Core brand colors from CV */
+  --brand-blue: #2F6AA8;        /* main accent (buttons, links, icons) */
+  --brand-blue-dark: #245280;   /* hover / active state */
+  --brand-blue-light: #D6E4F4;  /* pill backgrounds, badges */
+  --brand-blue-soft: #E8F0FA;   /* large panels (hero, timeline) */
+
+  --text-main: #333333;         /* headings, primary text */
+  --text-soft: #6B7280;         /* secondary text */
+  --border-soft: #D4D4D8;       /* card borders, separators */
+  --bg-page: #F5F7FB;           /* page background */
+  --bg-card: #FFFFFF;           /* cards, content areas */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 4px 16px rgba(15, 23, 42, 0.08);
 }
 
 /* Apply colors to existing elements */
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+}
+
+/* Hero container / timeline panel style */
+.hero,
+#timeline .container,
+.cards .card {
+  background-color: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-soft);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Name + tagline */
+.name {
+  color: var(--text-main);
+}
+
+.email {
+  color: var(--text-soft);
+}
+
+/* Job title pill to match light ribbon */
+.job-title {
+  background-color: var(--brand-blue-light);
+  color: var(--brand-blue);
+  border-radius: var(--radius-pill);
+  padding: 10px 22px;
+}
+
+/* Availability pill */
+.availability-badge {
+  background-color: var(--bg-card);
+  color: var(--text-soft);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-soft);
+}
+
+/* Buttons in hero */
+.btn {
+  background-color: var(--brand-blue);
+  border: 1px solid var(--brand-blue-dark);
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: var(--brand-blue-dark);
+}
+
+/* Secondary / outline button */
+.btn.secondary {
+  background-color: transparent;
+  color: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+
+/* LinkedIn button keeps its own blue, but aligned styling */
+.btn.linkedin {
+  background-color: #0A66C2;
+  border-color: #0A66C2;
+  color: #ffffff;
+}
+
+/* Section titles */
+.section-title {
+  color: var(--text-main);
+}
+
+/* Timeline bar and dots */
+ol.timeline {
+  background-color: var(--brand-blue-soft);
+}
+
+.timeline li .point {
+  background-color: var(--brand-blue);
+}
+
 .job-title {
   background: var(--color-secondary) !important;
   color: var(--color-text) !important;
