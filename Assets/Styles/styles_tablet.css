@@ -41,12 +41,15 @@
   .hero-actions {
     flex-direction: column !important;
     gap: 10px !important;
-    align-items: stretch !important;
+    padding: 0 15px !important; /* Tablet padding */
   }
   
   .hero-actions .btn {
+    max-width: 320px !important; /* Slightly wider for tablets */
     width: 100% !important;
     justify-content: center !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
   }
 }
 
@@ -78,4 +81,5 @@
     height: 160px !important;
   }
 }
+
 
