@@ -1,27 +1,76 @@
-/* Media queries*/
-/* Zusätzliche Regeln für medium Monitore  */
+/* Media queries for Tablet (max-width: 720px) */
 
-@media screen and (max-width:720px) {
-    
-	.downloadCVButton{
-		display: none;
-	}
-	.hero {
-		margin-top: 100px;
-	}
-	.sections{
-		width: 92%;
-	}
-	.card{
-		width: 95%
-	}
-	.timelineVertical{
-		display:block;
-		width: 50%;
-		margin: 0 auto;
-	}
+/* Hide desktop CV button, show mobile version */
+@media screen and (max-width: 720px) {
+  .downloadCVButton {
+    display: none !important;
+  }
+  
+  /* Adjust hero spacing for tablets */
+  .hero {
+    margin-top: 100px !important;
+    padding: 1.2em !important;
+  }
+  
+  /* Sections - slightly narrower on tablets */
+  .sections {
+    width: 92% !important;
+    display: inline-block !important;
+  }
+  
+  /* Cards - wider on tablets */
+  .card {
+    width: 95% !important;
+    margin: 10px 2.5% !important;
+  }
+  
+  /* Show vertical timeline image, hide horizontal */
+  .timelineVertical {
+    display: block !important;
+    width: 50% !important;
+    margin: 20px auto !important;
+  }
+  
+  ol.timeline {
+    display: none !important;
+  }
+}
 
-	.timeline {
-		display: none;
-	}
+/* Hero buttons - start stacking on tablets */
+@media screen and (max-width: 720px) {
+  .hero-actions {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+  
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
+
+/* Typography adjustments for tablets */
+@media screen and (max-width: 720px) {
+  h1.name {
+    font-size: 2.8rem !important;
+    margin-right: 0 !important;
+  }
+  
+  .job-title {
+    font-size: 1rem !important;
+    padding: 12px 20px !important;
+  }
+  
+  .section-title {
+    font-size: 1.6rem !important;
+  }
+}
+
+/* Profile picture - slightly smaller on tablets */
+@media screen and (max-width: 720px) {
+  .profilePicture {
+    width: 160px !important;
+    height: 160px !important;
+  }
 }
