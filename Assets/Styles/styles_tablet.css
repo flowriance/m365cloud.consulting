@@ -58,8 +58,12 @@
   }
   
   .job-title {
-    font-size: 1rem !important;
-    padding: 12px 20px !important;
+    max-width: 320px !important;  /* Slightly wider for tablets */
+    width: fit-content !important;
+    margin: 12px auto !important;
+    padding: 12px 18px !important;
+    font-size: 1.1rem !important;
+    box-sizing: border-box !important;
   }
   
   .section-title {
@@ -74,3 +78,4 @@
     height: 160px !important;
   }
 }
+
