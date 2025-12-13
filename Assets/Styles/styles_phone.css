@@ -10,14 +10,19 @@
   .hero-actions {
     flex-direction: column !important;
     width: 100% !important;
-    gap: 8px !important;
+    gap: 12px !important;
+    padding: 0 10px !important; /* Add side padding */
   }
 
   .hero-actions .btn,
   .downloadCVButton button {
+    max-width: 280px !important; /* Limit max width */
     width: 100% !important;
     justify-content: center !important;
-    margin: 0 !important;
+    margin: 0 auto !important; /* Center within container */
+    padding: 12px 20px !important; /* Consistent padding */
+    font-size: 16px !important; /* Touch-friendly size */
+    box-sizing: border-box !important; /* Include padding in width */
   }
 
   h1.name {
@@ -167,4 +172,5 @@
     height: 140px !important;
   }
 }
+
 
