@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- 
+
 <head>
   <meta charset="UTF-8">
   <title>Florian Zimmermann – Freelance Microsoft 365 & Digital Workplace Consultant</title>
@@ -13,9 +13,9 @@
   <link rel="preload" as="font" href="/Assets/Fonts/Arvo/Arvo-Regular.ttf" type="font/ttf" crossorigin>
   <link rel="preload" as="font" href="/Assets/Fonts/Nunito_Sans/NunitoSans-Regular.ttf" type="font/ttf" crossorigin>
   <link rel="preload" as="font" href="/Assets/Fonts/Arvo/Arvo-Bold.ttf" type="font/ttf" crossorigin>
-  <link rel="preload" as="font" href="/Assets/Fonts/Nunito_Sans/NunitoSans-Bold.ttf" type="font/ttf" crossorigin><head>
+  <link rel="preload" as="font" href="/Assets/Fonts/Nunito_Sans/NunitoSans-Bold.ttf" type="font/ttf" crossorigin>
 
-  <!-- Existing CSS dependencies (unchanged) -->
+  <!-- CSS dependencies -->
   <link type="text/css" href="/Assets/Styles/reset.css" rel="stylesheet">
   <link type="text/css" href="/Assets/Styles/styles.css" rel="stylesheet">
   <link type="text/css" href="/Assets/Styles/styles_tablet.css" rel="stylesheet">
@@ -23,10 +23,10 @@
 
   <link type="image/x-icon" href="/Assets/Pictures/Logo/LogoFavicon.png" rel="icon">
 
-  <!-- Font Awesome (existing) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Social cards -->
+  <!-- Social cards / Open Graph -->
   <meta property="og:title" content="Florian Zimmermann – Microsoft 365 Consultant">
   <meta property="og:description" content="Your partner across the digital workplace: Microsoft 365, Azure and Power Platform.">
   <meta property="og:url" content="https://www.m365cloud.consulting/">
@@ -34,7 +34,7 @@
   <meta property="og:image" content="https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Calendly badge widget (existing) -->
+  <!-- Calendly badge widget -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   <script type="text/javascript">
@@ -42,105 +42,118 @@
       Calendly.initBadgeWidget({
         url: "https://calendly.com/florian-christof/30min?hide_event_type_details=1",
         text: "Schedule a meeting!",
-        color: "#0069ff",
+        color: "#2563EB",
         textColor: "#ffffff",
         branding: undefined,
       });
     };
   </script>
-  <!-- Calendly badge widget end -->
 
-  <!-- JSON-LD: Person + Service (no new external files) -->
+  <!-- JSON-LD: Person Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Florian Zimmermann",
-    "jobTitle": "Microsoft 365 & Digital Workplace Consultant",
+    "jobTitle": "Freelance Microsoft 365 & Digital Workplace Consultant",
     "url": "https://www.m365cloud.consulting/",
     "image": "https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg",
+    "email": "florian@m365cloud.consulting",
     "sameAs": [
-      "https://www.linkedin.com/in/florianzimmermann2"
+      "https://www.linkedin.com/in/florian-christof",
+      "https://github.com/flowriance"
+    ],
+    "worksFor": {
+      "@type": "SelfEmployed"
+    },
+    "knowsAbout": [
+      "Microsoft 365",
+      "SharePoint Online",
+      "Microsoft Teams",
+      "Power Platform",
+      "Azure",
+      "Microsoft Entra ID",
+      "Compliance & Retention",
+      "Modern Workplace",
+      "Digital Transformation"
     ]
+  }
+  </script>
+
+  <!-- JSON-LD: Professional Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "M365 Cloud Consulting",
+    "url": "https://www.m365cloud.consulting/",
+    "description": "Freelance consulting for Microsoft 365, modern workplace, and digital transformation.",
+    "areaServed": "DE",
+    "serviceType": "Consulting",
+    "provider": {
+      "@type": "Person",
+      "name": "Florian Zimmermann"
+    }
   }
   </script>
 </head>
 
 <body>
 
-  <!-- Main hero / profile -->
+  <!-- Hero Section with Professional Layout -->
   <div class="container" id="profile">
     <div class="hero">
-      <!-- Profile picture -->
-      <picture>
+      <!-- Profile Picture with WebP fallback -->
+      <picture class="profilePicture">
         <source srcset="/Assets/Pictures/Profile/Profile_picture.webp" type="image/webp">
-        <img class="profilePicture" src="/Assets/Pictures/Profile/Profile_picture.jpg" alt="Profile Picture of Florian Zimmermann" width="180" height="180">
+        <img src="/Assets/Pictures/Profile/Profile_picture.jpg" 
+             alt="Florian Zimmermann - Microsoft 365 Consultant" 
+             width="180" height="180"
+             loading="eager">
       </picture>
-      <h1 class="name">Florian <strong>Zimmermann</strong></h1>
-      <span class="job-title">Freelance Microsoft 365 & Digital Workplace Consultant</span>
-      <span class="email">Your partner across the digital workplace</span>
 
-      <div class="hero-actions">
-        <form class="downloadCVButton" method="get" action="./Assets/Documents/Florian Zimmermann - Portfolio EN.pdf">
-          <button class="btn"><i class="fa fa-download"></i> Download CV (PDF)</button>
-        </form>
-        <a class="btn secondary" href="#meeting"><i class="fa fa-calendar"></i> Schedule a meeting</a>
-        <a class="btn linkedin" href="https://www.linkedin.com/in/florian-christof" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-linkedin"></i> View LinkedIn profile
-        </a>
+      <!-- Professional Hero Content -->
+      <div class="hero-content">
+        <h1 class="name">Florian <strong>Zimmermann</strong></h1>
+        
+        <!-- Badge Stack -->
+        <div class="job-badges">
+          <div class="job-title">
+            Microsoft 365 & Digital Workplace Consultant
+          </div>
+          <div class="availability-badge">
+            <i class="fa fa-check-circle"></i> Freelance • Available Now
+          </div>
+        </div>
+
+        <!-- Impact Metrics -->
+        <div class="hero-metrics">
+          <span class="metric">4+ years enterprise consulting</span>
+          <span class="metric-separator">•</span>
+          <span class="metric">5000+ users deployed</span>
+          <span class="metric-separator">•</span>
+          <span class="metric">10+ countries</span>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hero-actions">
+          <form class="downloadCVButton" method="get" action="./Assets/Documents/Florian Zimmermann - Portfolio EN.pdf">
+            <button class="btn primary" type="submit">
+              <i class="fa fa-download"></i> Download CV (PDF)
+            </button>
+          </form>
+          <a class="btn secondary" href="#meeting">
+            <i class="fa fa-calendar"></i> Free Consultation
+          </a>
+          <a class="btn linkedin" href="https://www.linkedin.com/in/florian-christof" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-linkedin"></i> View LinkedIn
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Hero actions minimal inline styling (no new files) -->
-  <style>
-    .hero-actions {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-    }
-    .hero-actions .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .btn.secondary {
-      background-color: transparent;
-      border: 1px solid #0069ff;
-      color: #0069ff;
-    }
-    .btn.linkedin {
-      background-color: #0a66c2;
-      border: 1px solid #0a66c2;
-      color: #ffffff;
-    }
-    .btn.linkedin:hover {
-      background-color: #004182;
-      border-color: #004182;
-    }
-    @media (max-width: 600px) {
-      .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-      .hero-actions .btn,
-      .downloadCVButton {
-        width: 100%;
-      }
-    }
-    .logo {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 10px;
-      width: 30px;
-    }
-  </style>
-
-  <!-- Qualifications and Technologies section -->
+  <!-- Qualifications and Technologies Section -->
   <div class="container" id="technologies">
     <div class="sections">
       <h2 class="section-title">Qualifications</h2>
@@ -167,7 +180,7 @@
     </div>
 
     <div class="sections">
-      <h2 class="section-title">Technologies</h2>
+      <h2 class="section-title">Core Technologies</h2>
 
       <div class="list-card">
         <picture>
@@ -188,63 +201,76 @@
           <img class="logo" src="/Assets/Pictures/azure-logo.jfif" alt="Azure logo" width="30" height="30">
         </picture>
         <div>
-          <h3>Microsoft Azure</h3>
+          <h3>Microsoft Azure & Entra</h3>
           <span>
             Azure Active Directory, application integration, databases and cloud automation to connect and extend Microsoft 365.
+          </span>
+        </div>
+      </div>
+
+      <div class="list-card">
+        <picture>
+          <source srcset="/Assets/Pictures/microsoft-logo.webp" type="image/webp">
+          <img class="logo" src="/Assets/Pictures/microsoft-logo.png" alt="Power Platform logo" width="30" height="30">
+        </picture>
+        <div>
+          <h3>Power Platform & Automation</h3>
+          <span>
+            Power Apps, Power Automate, Power BI, Business Process Flows and Low-Code solutions that extend Microsoft 365.
           </span>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Services section (reusing existing card/sections structure, no new files) -->
+  <!-- Services Section -->
   <div class="container cards" id="services">
     <h2 class="section-title">Services & Focus Areas</h2>
 
     <div class="card">
       <div class="skill-meta">
         <h3>Modern Workplace & Intranet</h3>
-        <span>Design and improve intranet and collaboration solutions based on SharePoint Online and Microsoft Teams.</span>
+        <span>Design and improve intranet and collaboration solutions based on SharePoint Online and Microsoft Teams with governance and adoption strategies.</span>
       </div>
     </div>
 
     <div class="card">
       <div class="skill-meta">
         <h3>Document Management & Compliance</h3>
-        <span>Create compliant document management using Microsoft 365 features such as retention policies and secure sharing.</span>
+        <span>Create compliant document management using Microsoft 365 features such as retention policies, sensitivity labels, and secure sharing.</span>
       </div>
     </div>
 
     <div class="card">
       <div class="skill-meta">
         <h3>Business Apps & Automation</h3>
-        <span>Build business applications and workflows with low-code components from Power Platform and Azure services.</span>
+        <span>Build business applications and intelligent workflows with low-code components from Power Platform and Azure services.</span>
       </div>
     </div>
 
     <div class="card">
       <div class="skill-meta">
         <h3>M365 Rollout & Migration</h3>
-        <span>Plan and coordinate the move from on-premises environments into the Microsoft cloud and roll out M365 to users.</span>
+        <span>Plan and coordinate the move from on-premises environments into the Microsoft cloud and roll out M365 to users worldwide.</span>
       </div>
     </div>
 
     <div class="card">
       <div class="skill-meta">
         <h3>Identity & Security</h3>
-        <span>Support secure tenant design, identity and access management and best practices for a resilient digital workplace.</span>
+        <span>Support secure tenant design, identity and access management, conditional access policies and best practices for a resilient digital workplace.</span>
       </div>
     </div>
 
     <div class="card">
       <div class="skill-meta">
-        <h3>Tool Evaluation</h3>
-        <span>Evaluate third-party add-ons and tools that complement Microsoft 365 for advanced business requirements.</span>
+        <h3>Consulting & Strategy</h3>
+        <span>Evaluate third-party tools, provide strategic advice on technology roadmaps and help align digital workplace investments with business goals.</span>
       </div>
     </div>
   </div>
 
-  <!-- Timeline section -->
+  <!-- Timeline Section -->
   <div class="container" id="timeline">
     <h2 class="section-title">Experience</h2>
     <div>
@@ -255,24 +281,30 @@
           </p>
           <span class="point"></span>
           <p class="description">
-            B.Sc. Computer Science @ <a href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html" target="_blank" rel="noopener noreferrer">DHBW Karlsruhe</a><br>/ Siemens AG
+            <strong>B.Sc. Computer Science</strong> @ <a href="https://www.karlsruhe.dhbw.de/en/general/about-dhbw-karlsruhe.html" target="_blank" rel="noopener noreferrer">DHBW Karlsruhe</a><br>
+            <em>Cooperative Education with Siemens AG</em><br>
+            Focus: Software development, cloud technologies, enterprise systems
           </p>
           <span class="date">2016 - 2019</span>
         </li>
         <li>
           <p class="line">
-            <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" alt="Consulting experience" height="24" width="24">
+            <img src="Assets/Icons/work_FILL0_wght400_GRAD0_opsz48.svg" alt="Work Experience" height="24" width="24">
           </p>
           <span class="point"></span>
           <p class="description">
-            (Junior) Consultant / Consultant / (Senior) Consultant – Digital Workplace and Microsoft 365 projects.
+            <strong>Consultant → Senior Consultant</strong> (Digital Workplace)<br>
+            <em>Large enterprise consulting firm</em><br>
+            Led M365 rollouts, modern workplace projects, SharePoint migrations, and digital transformation initiatives for enterprise clients across manufacturing, services, and public sector.
           </p>
           <span class="date">2019 - 2023</span>
         </li>
         <li>
           <span class="point"></span>
           <p class="description">
-            Rollout Coordinator for Microsoft 365 – coordinating tenant rollout, adoption and communication across locations.
+            <strong>M365 Rollout Coordinator & Project Lead</strong><br>
+            <em>Global organization</em><br>
+            Coordinated enterprise-wide Microsoft 365 rollout across multiple countries, managed stakeholder alignment, and drove user adoption at scale.
           </p>
           <span class="date">2023 - 2025</span>
         </li>
@@ -282,7 +314,9 @@
           </p>
           <span class="point"></span>
           <p class="description">
-            Freelance Microsoft 365 & Digital Workplace Consultant – available for project work, interim roles and advisory.
+            <strong>Freelance Microsoft 365 & Digital Workplace Consultant</strong><br>
+            <em>Independent consultant</em><br>
+            Providing specialized consulting for modern workplace strategy, M365 implementations, and digital transformation initiatives. Available for project work, interim leadership, and strategic advisory.
           </p>
           <span class="date">From 2025</span>
         </li>
@@ -294,24 +328,38 @@
     </div>
   </div>
 
-  <!-- Schedule a meeting! section (existing Calendly embed) -->
+  <br>
+  <br>
+
+  <!-- Schedule a Meeting Section -->
   <div class="container" id="meeting">
-    <h1 class="section-title">Schedule a meeting!</h1>
+    <h1 class="section-title">Let's Talk!</h1>
+    <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 20px;">
+      Schedule a <strong>free 30-minute consultation</strong> to discuss your digital workplace or M365 challenges.
+    </p>
+    <!-- Calendly inline widget -->
     <div class="calendly-inline-widget" data-url="https://calendly.com/florian-christof/30min?hide_event_type_details=1"
       style="min-width: 320px; height: 750px"></div>
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   </div>
 
+  <br><br>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <span>Contact: <a href="mailto:florian.zimmermann@m365cloud.consulting">florian.zimmermann@m365cloud.consulting</a> | 
-        <a href="https://www.linkedin.com/in/florianzimmermann2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </span>
-      <br>
-      <a href="./Assets/Sites/Datenschutz.html">Datenschutz</a> |
-      <a href="./Assets/Sites/Impressum.html">Impressum</a>
+      <div style="margin-bottom: 16px; font-size: 14px;">
+        <strong>Contact</strong><br>
+        Email: <a href="mailto:florian@m365cloud.consulting" style="color: var(--color-primary); text-decoration: none;">florian@m365cloud.consulting</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/florian-christof" target="_blank" rel="noopener" style="color: var(--color-primary); text-decoration: none;">Florian Christof</a>
+      </div>
+      <div style="border-top: 1px solid var(--color-border); padding-top: 16px; font-size: 12px;">
+        <a href="./Assets/Sites/Datenschutz.html" rel="nofollow">Datenschutz</a> | 
+        <a href="./Assets/Sites/Impressum.html" rel="nofollow">Impressum</a>
+      </div>
     </div>
   </footer>
 
 </body>
+
 </html>
