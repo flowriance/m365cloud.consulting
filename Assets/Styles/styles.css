@@ -1533,7 +1533,45 @@ ol.timeline::after {
   }
 }
 
+/* ===== TIMELINE 5-ITEM LAYOUT ===== */
 
+/* Base 5-item timeline - Desktop (all 5 in one row) */
+.timeline-5 li {
+  width: 19.2%;
+  margin: 0 0.4%;
+  height: 150px;
+}
+
+.timeline-5 li .line {
+  top: -70px;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Highlight current position with pulse animation */
+.timeline-current .point {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 2px var(--color-surface),
+                0 0 12px rgba(var(--color-teal-500-rgb), 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 2px var(--color-surface),
+                0 0 20px rgba(var(--color-teal-500-rgb), 0.8);
+  }
+}
+
+.timeline-current .description {
+  border-left: 4px solid var(--color-primary);
+  background: rgba(var(--color-teal-500-rgb), 0.02);
+}
+
+.timeline-current .description strong {
+  color: var(--color-primary);
+}
 
 /* Footer */
 .footer {
