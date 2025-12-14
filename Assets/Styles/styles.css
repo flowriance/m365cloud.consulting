@@ -1242,9 +1242,9 @@ h1.name {
 
 /* Secondary / outline button */
 .btn.secondary {
-  background-color: transparent;
-  color: var(--color-text);
-  border: 1px solid var(--color-border);
+  background-color: var(--color-primary);  /* Teal */
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-primary);
 }
 
 .btn.secondary:hover {
