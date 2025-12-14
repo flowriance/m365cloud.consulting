@@ -1463,7 +1463,7 @@ ol.timeline li .point {
   z-index: 3;
   will-change: transform;
   cursor: pointer;
-  margin-top: -13px;
+  margin-top: -8px;
 }
 
 /* Date label */
