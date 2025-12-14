@@ -1460,11 +1460,13 @@ ol.timeline::after {
               0 0 10px rgba(var(--color-teal-500-rgb), 0.4);
   transition: all var(--duration-normal) var(--ease-standard);
   z-index: 3;
+  will-change: transform;
+  cursor: pointer;
 }
 
 .timeline li .description {
   display: none;
-  padding: var(--space-12);
+  padding: var(--space-16);
   margin-top: var(--space-28);
   position: relative;
   z-index: 1;
@@ -1477,7 +1479,9 @@ ol.timeline::after {
   background: var(--color-surface);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-card-border);
-  box-shadow: var(--shadow-md);
+  border-left: 4px solid var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all var(--duration-normal) var(--ease-standard);
 }
 
 .timeline .description::before {
@@ -1486,18 +1490,19 @@ ol.timeline::after {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 6px solid var(--color-card-border);
+  border-bottom: 7px solid var(--color-primary);
   position: absolute;
-  top: -6px;
+  top: -7px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .timeline .date {
-  font-size: var(--font-size-xs);
+  font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   font-weight: var(--font-weight-normal);
-  margin-top: var(--space-4);
+  margin-top: var(--space-6);
+  letter-spacing: 0.5px;
 }
 
 .timeline li:hover {
@@ -1507,13 +1512,14 @@ ol.timeline::after {
 .timeline li:hover .description {
   display: block;
   animation: slideUp var(--duration-normal) var(--ease-standard);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .timeline li:hover .point {
   background: var(--color-primary-hover);
   transform: translateX(-50%) scale(1.35);
   box-shadow: 0 0 0 2px var(--color-surface),
-              0 0 15px rgba(var(--color-teal-500-rgb), 0.6);
+              0 0 20px rgba(var(--color-teal-500-rgb), 0.6);
 }
 
 @keyframes slideUp {
@@ -1526,6 +1532,8 @@ ol.timeline::after {
     transform: translateY(0);
   }
 }
+
+
 
 /* Footer */
 .footer {
