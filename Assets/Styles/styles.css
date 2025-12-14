@@ -1383,26 +1383,27 @@ h1.name {
   font-size: var(--font-size-md);
 }
 
-/* ===== TIMELINE PERFECT ALIGNMENT ===== */
-
-/* Timeline line - spans full width, perfectly centered */
+/* Timeline Container - matches page width constraint */
 ol.timeline {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: 80px 0;
+  margin: 80px auto;
   padding: 0;
+  max-width: 1000px;
   list-style: none;
+  list-style-type: none;
 }
 
+/* Timeline line - starts at first point, ends at last point */
 ol.timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+  left: calc(10% - 8px);
+  right: calc(10% - 8px);
+  width: calc(100% - 20% + 16px);
   height: 3px;
   background: linear-gradient(90deg, 
     rgba(var(--color-teal-500-rgb), 0.3) 0%,
@@ -1411,11 +1412,12 @@ ol.timeline::before {
   z-index: 1;
 }
 
+/* Arrow at end - positioned at last point */
 ol.timeline::after {
   content: "";
   position: absolute;
   top: -10px;
-  right: 0;
+  right: calc(10% - 18px);
   width: 0;
   height: 0;
   border-left: 20px solid var(--color-primary);
@@ -1424,7 +1426,7 @@ ol.timeline::after {
   z-index: 2;
 }
 
-/* Base timeline items */
+/* Timeline Items */
 ol.timeline li {
   position: relative;
   display: flex;
@@ -1437,22 +1439,23 @@ ol.timeline li {
 }
 
 /* 5-item layout - 20% each */
-.timeline-5 li {
+ol.timeline.timeline-5 li {
   width: 20%;
   height: 150px;
   justify-content: flex-start;
 }
 
-/* Point - PERFECTLY centered on line */
+/* Point - PERFECTLY centered on line at Y: 0 */
 ol.timeline li .point {
   position: absolute;
-  top: -9px;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
+  display: block;
   width: 16px;
   height: 16px;
   border: 5px solid var(--color-surface);
-  border-radius: var(--radius-full);
+  border-radius: 50%;
   background: var(--color-primary);
   box-shadow: 0 0 0 2px var(--color-surface),
               0 0 10px rgba(var(--color-teal-500-rgb), 0.4);
@@ -1460,12 +1463,13 @@ ol.timeline li .point {
   z-index: 3;
   will-change: transform;
   cursor: pointer;
+  margin-top: -13px;
 }
 
 /* Date label */
 ol.timeline li .line {
   position: absolute;
-  top: -55px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   font-size: var(--font-size-md);
@@ -1480,7 +1484,7 @@ ol.timeline li .line {
 ol.timeline li .description {
   display: none;
   position: absolute;
-  top: 30px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -1498,19 +1502,21 @@ ol.timeline li .description {
   z-index: 10;
 }
 
+/* Arrow pointer on description */
 ol.timeline li .description::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: -8px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 7px solid var(--color-primary);
+  border-bottom: 8px solid var(--color-primary);
 }
 
+/* Date label in description */
 ol.timeline li .date {
   display: block;
   font-size: var(--font-size-sm);
@@ -1537,7 +1543,7 @@ ol.timeline li:hover .point {
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(var(--space-8));
+    transform: translateX(-50%) translateY(8px);
   }
   to {
     opacity: 1;
@@ -1546,7 +1552,7 @@ ol.timeline li:hover .point {
 }
 
 /* Current role highlight */
-.timeline-current .point {
+ol.timeline li.timeline-current .point {
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -1561,100 +1567,11 @@ ol.timeline li:hover .point {
   }
 }
 
-.timeline-current .description {
+ol.timeline li.timeline-current .description {
   background: rgba(var(--color-teal-500-rgb), 0.02);
 }
 
-.timeline-current .description strong {
-  color: var(--color-primary);
-}
-
-.timeline .description::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 7px solid var(--color-primary);
-  position: absolute;
-  top: -7px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.timeline .date {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  font-weight: var(--font-weight-normal);
-  margin-top: var(--space-6);
-  letter-spacing: 0.5px;
-}
-
-.timeline li:hover {
-  color: var(--color-primary);
-}
-
-.timeline li:hover .description {
-  display: block;
-  animation: slideUp var(--duration-normal) var(--ease-standard);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.timeline li:hover .point {
-  background: var(--color-primary-hover);
-  transform: translateX(-50%) scale(1.35);
-  box-shadow: 0 0 0 2px var(--color-surface),
-              0 0 20px rgba(var(--color-teal-500-rgb), 0.6);
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(var(--space-8));
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ===== TIMELINE 5-ITEM LAYOUT ===== */
-
-/* Base 5-item timeline - Desktop (all 5 in one row) */
-.timeline-5 li {
-  width: 19.2%;
-  margin: 0 0.4%;
-  height: 150px;
-}
-
-.timeline-5 li .line {
-  top: -70px;
-  font-size: var(--font-size-md);
-  font-weight: var(--font-weight-semibold);
-}
-
-/* Highlight current position with pulse animation */
-.timeline-current .point {
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 2px var(--color-surface),
-                0 0 12px rgba(var(--color-teal-500-rgb), 0.4);
-  }
-  50% {
-    box-shadow: 0 0 0 2px var(--color-surface),
-                0 0 20px rgba(var(--color-teal-500-rgb), 0.8);
-  }
-}
-
-.timeline-current .description {
-  border-left: 4px solid var(--color-primary);
-  background: rgba(var(--color-teal-500-rgb), 0.02);
-}
-
-.timeline-current .description strong {
+ol.timeline li.timeline-current .description strong {
   color: var(--color-primary);
 }
 
