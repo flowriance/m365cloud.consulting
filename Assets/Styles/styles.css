@@ -1466,15 +1466,15 @@ ol.timeline li .line {
   z-index: 2;
 }
 
-/* Description box */
 ol.timeline li .description {
   display: none;
   position: absolute;
-  top: 40px;
+  top: calc(var(--space-16) + var(--space-12));
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
-  padding: var(--space-16);
+  width: 280px;
+  max-width: 90vw;
+  padding: var(--space-20);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-normal);
   line-height: var(--line-height-normal);
@@ -1483,9 +1483,27 @@ ol.timeline li .description {
   border-radius: var(--radius-md);
   border: 1px solid var(--color-card-border);
   border-left: 4px solid var(--color-primary);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: all var(--duration-normal) var(--ease-standard);
   z-index: 10;
+}
+
+ol.timeline li .description strong {
+  display: block;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+ol.timeline li .description p {
+  margin: 0 0 var(--space-12) 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+ol.timeline li .description p:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Arrow pointer on description */
