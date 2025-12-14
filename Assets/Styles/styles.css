@@ -1240,20 +1240,29 @@ h1.name {
   outline-offset: 2px;
 }
 
-/* Secondary / outline button */
+/* Secondary button - Light gray with teal accent */
 .btn.secondary {
-  background-color: var(--color-primary);  /* Teal */
-  color: var(--color-btn-primary-text);
-  border-color: var(--color-primary);
+  background-color: var(--color-gray-200);
+  color: var(--color-text);
+  border: 1.5px solid var(--color-gray-300);
+  transition: all var(--duration-normal) var(--ease-standard);
 }
 
 .btn.secondary:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-color: var(--color-text-secondary);
+  background-color: rgba(167, 169, 169, 0.15);
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(var(--color-teal-500-rgb), 0.15);
+  color: var(--color-text);
 }
 
 .btn.secondary:active {
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(167, 169, 169, 0.25);
+  border-color: var(--color-primary);
+}
+
+.btn.secondary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-focus-ring);
 }
 
 /* LinkedIn button keeps its own blue */
