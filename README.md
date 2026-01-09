@@ -68,7 +68,6 @@ m365cloud.consulting/
 ### Design System Features
 - **Color Palette** - Teal primary, cream/charcoal surfaces, accessibility-first contrast
 - **CSS Variables** - 90+ semantic color, spacing, and typography tokens
-- **Dark Mode** - Automatic (prefers-color-scheme) + manual toggle support
 - **Responsive Breakpoints** - Mobile (480px), Tablet (720px), Desktop (1024px+)
 
 ---
