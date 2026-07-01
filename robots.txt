@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /Assets/Documents/
 
 Sitemap: https://www.m365cloud.consulting/sitemap.xml

@@ -1,184 +1,171 @@
-/* Mobile Styles - max-width: 450px and below */
+/* Mobile styles – consolidated single-block approach, max-width: 480px */
+@media screen and (max-width: 480px) {
 
-/* Hero Section - Stack everything vertically */
-@media screen and (max-width: 450px) {
-  .hero {
-    padding: 1em !important;
-    margin-top: 20px !important;
-  }
-
-  .hero-actions {
-    flex-direction: column !important;
-    width: 100% !important;
-    gap: 12px !important;
-    padding: 0 10px !important; /* Add side padding */
-  }
-
-  .hero-actions .btn,
-  .downloadCVButton button {
-    max-width: 280px !important; /* Limit max width */
-    width: 100% !important;
-    justify-content: center !important;
-    margin: 0 auto !important; /* Center within container */
-    padding: 12px 20px !important; /* Consistent padding */
-    font-size: 16px !important; /* Touch-friendly size */
-    box-sizing: border-box !important; /* Include padding in width */
-  }
-
-  h1.name {
-    font-size: 2.5rem !important;
-    margin-right: 0 !important;
-    margin-bottom: 10px !important;
-  }
-
-     .job-title {
-    max-width: 280px !important;
-    width: fit-content !important;
-    margin: 15px auto !important;
-    padding: 12px 20px !important;
-    font-size: 1rem !important;
-    line-height: 1.3 !important;
-    box-sizing: border-box !important;
-    word-wrap: break-word !important;
-    background-color: #D9E7F8 !important; /* Keep blue background */
-    color: #4A90E2 !important;            /* Keep blue text */
-    border-radius: 5px !important;
-  }
-
-  .email {
-    font-size: 1.1rem !important;
-    text-align: center !important;
-  }
-}
-
-/* Sections - Full width on mobile */
-@media screen and (max-width: 450px) {
-  .sections {
-    width: 100% !important;
-    display: block !important;
-    margin: 20px 0 !important;
-  }
-
-  .list-card {
-    margin: 20px 0 !important;
-  }
-
-  .list-card .exp {
-    display: block !important;
-    width: 100% !important;
-    margin-bottom: 8px !important;
-    text-align: center !important;
-  }
-
-  .list-card div {
-    width: 100% !important;
-    text-align: center !important;
-  }
-}
-
-/* Services Cards - Stack single column */
-@media screen and (max-width: 450px) {
-  .cards {
-    display: block !important;
-  }
-
-  .card {
-    width: 100% !important;
-    margin: 15px 0 !important;
-    display: block !important;
-    text-align: center !important;
-    padding: 25px 20px !important;
-  }
-
-  .skill-meta {
-    margin: 0 !important;
-    text-align: center !important;
-  }
-
-  .skill-meta h3 {
-    font-size: 1.3rem !important;
-  }
-}
-
-/* Timeline - Vertical layout */
-@media screen and (max-width: 450px) {
-  ol.timeline {
-    margin: 40px 10px !important;
-  }
-
-  .timeline li {
-    width: 100% !important;
-    float: none !important;
-    margin-bottom: 30px !important;
-  }
-
-  .timeline li .description {
-    display: block !important;
-    font-size: 16px !important;
-    text-align: center !important;
-  }
-
-  .timeline .date {
-    text-align: center !important;
-    display: block !important;
-    margin-top: 5px !important;
-  }
-
-  .timelineVertical {
-    display: block !important;
-    width: 100% !important;
-    margin-top: 20px !important;
-  }
-}
-
-/* Container & Typography */
-@media screen and (max-width: 450px) {
-  .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    margin-top: 20px !important;
-  }
-
-  .section-title {
-    font-size: 1.4rem !important;
-    text-align: center !important;
-  }
-
+  /* Base */
   body {
-    font-size: 16px !important;
+    font-size: 16px;
   }
 
   p {
-    font-size: 15px !important;
-    line-height: 1.6 !important;
+    font-size: 15px;
+    line-height: 1.6;
   }
-}
 
-/* Calendly - Full width */
-@media screen and (max-width: 450px) {
+  /* Container */
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: clamp(1.25rem, 5vw, 1.5rem);
+    text-align: center;
+  }
+  .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Hero */
+  .hero {
+    padding: var(--space-10) var(--space-4);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-3);
+    padding: 0 var(--space-4);
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+
+  h1.name {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+    margin-bottom: var(--space-2);
+  }
+
+  .job-title {
+    max-width: 90vw;
+    margin: var(--space-3) auto;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .email {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 var(--space-4);
+  }
+
+  .profilePicture {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Sections / Qualifications */
+  #technologies {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .sections {
+    width: 100%;
+    margin: 0;
+  }
+
+  .list-card {
+    margin-bottom: var(--space-4);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .list-card .exp {
+    width: auto;
+    margin-bottom: var(--space-2);
+  }
+
+  .list-card div {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Services Cards */
+  .container.cards {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .card {
+    padding: var(--space-6) var(--space-5);
+    text-align: center;
+  }
+
+  .skill-meta {
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Timeline */
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline li {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: var(--space-2);
+    padding-bottom: var(--space-8);
+    border-left: 2px solid var(--color-teal-400);
+    padding-left: var(--space-5);
+    margin-left: var(--space-3);
+  }
+
+  .timeline .line {
+    text-align: left;
+    font-weight: 700;
+    color: var(--color-teal-600);
+  }
+
+  .timeline .point {
+    display: none;
+  }
+
+  .timeline .description {
+    text-align: left;
+  }
+
+  .timeline .date {
+    text-align: left;
+  }
+
+  /* Calendly */
   .calendly-inline-widget {
     min-width: 100% !important;
-    height: 600px !important;
+    height: 620px !important;
   }
-}
 
-/* Footer - Stack */
-@media screen and (max-width: 450px) {
+  /* Footer */
   .footer .container {
-    text-align: center !important;
-    padding: 20px 15px !important;
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-6) var(--space-4);
+    gap: var(--space-2);
+  }
+
+  .footer-sep {
+    display: none;
   }
 }
-
-/* Profile Picture - Ensure it stays perfect */
-@media screen and (max-width: 450px) {
-  .profilePicture {
-    margin-top: 0 !important;
-    width: 140px !important;
-    height: 140px !important;
-  }
-}
-
-
-
-
