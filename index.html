@@ -1,211 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
-  <meta charset="UTF-8">
-  <title>Florian Zimmermann – Freelance Microsoft 365 & Digital Workplace Consultant</title>
-  <meta name="description" content="Freelance Microsoft 365 & Digital Workplace consultant specializing in modern workplace rollouts, tenant hardening, SharePoint, Teams, Power Platform, and business process automation.">
-  <meta name="keywords" content="Microsoft 365 consultant, M365 freelance, SharePoint consultant, Teams governance, Power Platform developer, modern workplace, Entra ID, Intune, digital workplace Germany">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="canonical" href="https://www.m365cloud.consulting/">
-  
-  <!-- Font preload for better performance -->
-  <link rel="preload" as="font" href="/Assets/Fonts/Arvo/Arvo-Regular.ttf" type="font/ttf" crossorigin>
-  <link rel="preload" as="font" href="/Assets/Fonts/Nunito_Sans/NunitoSans-Regular.ttf" type="font/ttf" crossorigin>
-  <link rel="preload" as="font" href="/Assets/Fonts/Arvo/Arvo-Bold.ttf" type="font/ttf" crossorigin>
-  <link rel="preload" as="font" href="/Assets/Fonts/Nunito_Sans/NunitoSans-Bold.ttf" type="font/ttf" crossorigin><head>
+<meta charset="UTF-8">
+<title>Florian Zimmermann – Freelance Microsoft 365 &amp; Digital Workplace Consultant</title>
+<meta name="description" content="Freelance Microsoft 365 &amp; Digital Workplace consultant specializing in modern workplace rollouts, tenant hardening, SharePoint, Teams, Power Platform, and business process automation.">
+<meta name="keywords" content="Microsoft 365 consultant, M365 freelance, SharePoint consultant, Teams governance, Power Platform developer, modern workplace, Entra ID, Intune, digital workplace Germany">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.m365cloud.consulting/">
 
-  <!-- Existing CSS dependencies (unchanged) -->
-  <link type="text/css" href="/Assets/Styles/reset.css" rel="stylesheet">
-  <link type="text/css" href="/Assets/Styles/styles.css" rel="stylesheet">
-  <link type="text/css" href="/Assets/Styles/styles_tablet.css" rel="stylesheet">
-  <link type="text/css" href="/Assets/Styles/styles_phone.css" rel="stylesheet">
+<!-- Fonts: preload the two faces used above the fold -->
+<link rel="preload" as="font" type="font/ttf" href="/Assets/Fonts/Arvo/Arvo-Regular.ttf" crossorigin>
+<link rel="preload" as="font" type="font/ttf" href="/Assets/Fonts/Arvo/Arvo-Bold.ttf" crossorigin>
 
-  <link type="image/x-icon" href="/Assets/Pictures/Logo/LogoFavicon.png" rel="icon">
+<!-- One merged stylesheet (reset + base + tablet + phone) -->
+<link rel="stylesheet" href="/Assets/Styles/main.css">
+<link type="image/png" href="/Assets/Pictures/Logo/LogoFavicon.png" rel="icon">
 
-  <!-- Font Awesome (existing) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Social cards -->
+<meta property="og:title" content="Florian Zimmermann – Microsoft 365 Consultant">
+<meta property="og:description" content="Your partner across the digital workplace: Microsoft 365, Azure and Power Platform.">
+<meta property="og:url" content="https://www.m365cloud.consulting/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Social cards -->
-  <meta property="og:title" content="Florian Zimmermann – Microsoft 365 Consultant">
-  <meta property="og:description" content="Your partner across the digital workplace: Microsoft 365, Azure and Power Platform.">
-  <meta property="og:url" content="https://www.m365cloud.consulting/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Calendly badge widget (existing) -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script type="text/javascript">
-    window.onload = function () {
-      Calendly.initBadgeWidget({
-        url: "https://calendly.com/florian-christof/30min?hide_event_type_details=1",
-        text: "Schedule a meeting!",
-        color: "#0069ff",
-        textColor: "#ffffff",
-        branding: undefined,
-      });
-    };
-  </script>
-  <!-- Calendly badge widget end -->
-
-  <!-- JSON-LD: Person + Service (no new external files) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Florian Zimmermann",
-    "jobTitle": "Microsoft 365 & Digital Workplace Consultant",
-    "url": "https://www.m365cloud.consulting/",
-    "image": "https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/in/florianzimmermann2"
-    ]
-  }
-  </script>
+<!-- JSON-LD: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Florian Zimmermann",
+  "jobTitle": "Microsoft 365 & Digital Workplace Consultant",
+  "url": "https://www.m365cloud.consulting/",
+  "image": "https://www.m365cloud.consulting/Assets/Pictures/Profile/Profile_picture.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/florianzimmermann2"
+  ]
+}
+</script>
 </head>
-
 <body>
 
-  <!-- Main hero / profile -->
-  <div class="container" id="profile">
-    <div class="hero">
-      <!-- Profile picture -->
+<main>
+
+<!-- Main hero / profile -->
+<div class="container" id="profile">
+  <div class="hero">
+
+    <!-- Profile picture: small, square file (320x320) shown at 160x160 -->
+    <picture>
+      <source srcset="/Assets/Pictures/Profile/Profile_picture_320.webp" type="image/webp">
+      <img class="profilePicture" src="/Assets/Pictures/Profile/Profile_picture_320.jpg" alt="Profile Picture of Florian Zimmermann" width="160" height="160" fetchpriority="high" decoding="async">
+    </picture>
+
+    <h1 class="name">Florian <strong>Zimmermann</strong></h1><br />
+    <span class="job-title">Freelance Microsoft 365 Consultant</span>
+    <span class="email">Your partner across the digital workplace</span>
+
+    <div class="hero-actions">
+      <a class="btn secondary" href="./Assets/Documents/Florian%20Zimmermann%20-%20Portfolio%20EN.pdf" download>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16"/></svg>Download CV (PDF)
+      </a>
+      <a class="btn primary" href="https://calendly.com/florian-christof/30min?hide_event_type_details=1" data-calendly target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Schedule a meeting
+      </a>
+      <a class="btn linkedin" href="https://www.linkedin.com/in/florianzimmermann2" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6m0 3c0-2 1-3 2.5-3S17 12 17 14v3"/></svg>View LinkedIn profile
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Qualifications and Technologies section -->
+<div class="container" id="technologies">
+  <div class="sections">
+    <h2 class="section-title">Qualifications</h2>
+
+    <div class="list-card">
+      <span class="exp">+ 4 years</span>
+      <div>
+        <h3>Digital Workplace Consulting</h3>
+        <span>
+          Requirements engineering, project management, rollout coordination and project execution for Microsoft 365 based workplaces.
+        </span>
+      </div>
+    </div>
+
+    <div class="list-card">
+      <span class="exp">+ 7 years</span>
+      <div>
+        <h3>IT Development &amp; Engineering</h3>
+        <span>
+          Software and hardware development, platform administration and automation with a strong Microsoft cloud focus.
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sections">
+    <h2 class="section-title">Technologies</h2>
+
+    <div class="list-card">
       <picture>
-        <source srcset="/Assets/Pictures/Profile/Profile_picture.webp" type="image/webp">
-        <img class="profilePicture" src="/Assets/Pictures/Profile/Profile_picture.jpg" alt="Profile Picture of Florian Zimmermann" width="180" height="180">
+        <source srcset="/Assets/Pictures/microsoft-logo.webp" type="image/webp">
+        <img class="logo" src="/Assets/Pictures/microsoft-logo.png" alt="Microsoft logo" width="30" height="30" loading="lazy" decoding="async">
       </picture>
-      <h1 class="name">Florian <strong>Zimmermann</strong></h1><br />
-      <span class="job-title">Freelance Microsoft 365 Consultant</span>
-      <span class="email">Your partner across the digital workplace</span>
+      <div>
+        <h3>Microsoft 365</h3>
+        <span>
+          SharePoint Online, Teams, OneDrive, Exchange Online, Viva and compliance capabilities across the Microsoft 365 platform.
+        </span>
+      </div>
+    </div>
 
-  <div class="hero-actions">
-        <a class="btn secondary" href="./Assets/Documents/Florian Zimmermann - Portfolio EN.pdf" download>
-          <i class="fa fa-download"></i> Download CV (PDF)
-        </a>
-        <a class="btn secondary" href="#meeting">
-          <i class="fa fa-calendar"></i> Schedule a meeting
-        </a>
-        <a class="btn linkedin" href="https://www.linkedin.com/in/florian-christof" target="_blank" rel="noopener noreferrer">
-          <i class="fa fa-linkedin"></i> View LinkedIn profile
-        </a>
+    <div class="list-card">
+      <picture>
+        <source srcset="/Assets/Pictures/azure-logo.webp" type="image/webp">
+        <img class="logo" src="/Assets/Pictures/azure-logo.jfif" alt="Azure logo" width="30" height="30" loading="lazy" decoding="async">
+      </picture>
+      <div>
+        <h3>Microsoft Azure</h3>
+        <span>
+          Azure Active Directory, application integration, databases and cloud automation to connect and extend Microsoft 365.
+        </span>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Qualifications and Technologies section -->
-  <div class="container" id="technologies">
-    <div class="sections">
-      <h2 class="section-title">Qualifications</h2>
+<!-- Services section -->
+<div class="container cards" id="services">
+  <h2 class="section-title">Services &amp; Focus Areas</h2>
 
-      <div class="list-card">
-        <span class="exp">+ 4 years</span>
-        <div>
-          <h3>Digital Workplace Consulting</h3>
-          <span>
-            Requirements engineering, project management, rollout coordination and project execution for Microsoft 365 based workplaces.
-          </span>
-        </div>
-      </div>
-
-      <div class="list-card">
-        <span class="exp">+ 7 years</span>
-        <div>
-          <h3>IT Development & Engineering</h3>
-          <span>
-            Software and hardware development, platform administration and automation with a strong Microsoft cloud focus.
-          </span>
-        </div>
-      </div>
-    </div>
-
-    <div class="sections">
-      <h2 class="section-title">Technologies</h2>
-
-      <div class="list-card">
-        <picture>
-          <source srcset="/Assets/Pictures/microsoft-logo.webp" type="image/webp">
-          <img class="logo" src="/Assets/Pictures/microsoft-logo.png" alt="Microsoft logo" width="30" height="30">
-        </picture>
-        <div>
-          <h3>Microsoft 365</h3>
-          <span>
-            SharePoint Online, Teams, OneDrive, Exchange Online, Viva and compliance capabilities across the Microsoft 365 platform.
-          </span>
-        </div>
-      </div>
-
-      <div class="list-card">
-        <picture>
-          <source srcset="/Assets/Pictures/azure-logo.webp" type="image/webp">
-          <img class="logo" src="/Assets/Pictures/azure-logo.jfif" alt="Azure logo" width="30" height="30">
-        </picture>
-        <div>
-          <h3>Microsoft Azure</h3>
-          <span>
-            Azure Active Directory, application integration, databases and cloud automation to connect and extend Microsoft 365.
-          </span>
-        </div>
-      </div>
+  <div class="card">
+    <div class="skill-meta">
+      <h3>Modern Workplace &amp; Intranet</h3>
+      <span>Design and improve intranet and collaboration solutions based on SharePoint Online and Microsoft Teams.</span>
     </div>
   </div>
 
-  <!-- Services section (reusing existing card/sections structure, no new files) -->
-  <div class="container cards" id="services">
-    <h2 class="section-title">Services & Focus Areas</h2>
-
-    <div class="card">
-      <div class="skill-meta">
-        <h3>Modern Workplace & Intranet</h3>
-        <span>Design and improve intranet and collaboration solutions based on SharePoint Online and Microsoft Teams.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="skill-meta">
-        <h3>Document Management & Compliance</h3>
-        <span>Create compliant document management using Microsoft 365 features such as retention policies and secure sharing.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="skill-meta">
-        <h3>Business Apps & Automation</h3>
-        <span>Build business applications and workflows with low-code components from Power Platform and Azure services.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="skill-meta">
-        <h3>M365 Rollout & Migration</h3>
-        <span>Plan and coordinate the move from on-premises environments into the Microsoft cloud and roll out M365 to users.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="skill-meta">
-        <h3>Identity & Security</h3>
-        <span>Support secure tenant design, identity and access management and best practices for a resilient digital workplace.</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="skill-meta">
-        <h3>Tool Evaluation</h3>
-        <span>Evaluate third-party add-ons and tools that complement Microsoft 365 for advanced business requirements.</span>
-      </div>
+  <div class="card">
+    <div class="skill-meta">
+      <h3>Document Management &amp; Compliance</h3>
+      <span>Create compliant document management using Microsoft 365 features such as retention policies and secure sharing.</span>
     </div>
   </div>
 
- <!-- Experience Section -->
+  <div class="card">
+    <div class="skill-meta">
+      <h3>Business Apps &amp; Automation</h3>
+      <span>Build business applications and workflows with low-code components from Power Platform and Azure services.</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="skill-meta">
+      <h3>M365 Rollout &amp; Migration</h3>
+      <span>Plan and coordinate the move from on-premises environments into the Microsoft cloud and roll out M365 to users.</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="skill-meta">
+      <h3>Identity &amp; Security</h3>
+      <span>Support secure tenant design, identity and access management and best practices for a resilient digital workplace.</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="skill-meta">
+      <h3>Tool Evaluation</h3>
+      <span>Evaluate third-party add-ons and tools that complement Microsoft 365 for advanced business requirements.</span>
+    </div>
+  </div>
+</div>
+
+<!-- Experience Section -->
 <div class="container">
   <section>
     <h2 class="section-title">Experience</h2>
-    
+
     <ol class="timeline timeline-5">
+
       <!-- Item 1: Education -->
-      <li>
+      <li tabindex="0">
         <span class="line">2016 - 2019</span>
         <span class="point"></span>
         <div class="description">
@@ -217,11 +195,11 @@
       </li>
 
       <!-- Item 2: MHP -->
-      <li>
+      <li tabindex="0">
         <span class="line">2019 - 2023</span>
         <span class="point"></span>
         <div class="description">
-          <strong>Digital Workplace & M365 Specialist</strong>
+          <strong>Digital Workplace &amp; M365 Specialist</strong>
           <p style="margin: var(--space-8) 0 0 0; font-size: var(--font-size-xs);">MHP - A Porsche company</p>
           <p>Architected Microsoft 365 solutions for 10,000+ users. Led digital workplace transformation, designed Teams governance frameworks, optimized cloud infrastructure for enterprise security and compliance.</p>
           <span class="date">4 Years</span>
@@ -229,7 +207,7 @@
       </li>
 
       <!-- Item 3: BR (2023-2025) -->
-      <li>
+      <li tabindex="0">
         <span class="line">2023 - 2025</span>
         <span class="point"></span>
         <div class="description">
@@ -242,52 +220,98 @@
       </li>
 
       <!-- Item 4: EnBW (CURRENT) -->
-      <li class="timeline-current">
-        <span class="line">2025 - July 2026</span>
+      <li class="timeline-current" tabindex="0">
+        <span class="line">2025 - Jan 2027</span>
         <span class="point"></span>
         <div class="description">
-          <strong>IT Business Analyst - eSignature & DMS</strong>
+          <strong>IT Business Analyst - eSignature &amp; DMS</strong>
           <p style="margin: var(--space-8) 0 0 0; font-size: var(--font-size-xs);">EnBW Energie Baden-Württemberg AG</p>
-          <p><strong style="color: var(--color-primary);">CURRENT ROLE</strong><br />
-           Leading enterprise-wide digital signature transformation using Adobe Sign. Architect REST API integrations with M365 (Power Automate, Logic Apps). Implemented SharePoint-based DMS. Cross-functional stakeholder management and technical documentation.</p>
+          <p><strong style="color: var(--color-teal-600);">CURRENT ROLE</strong><br />
+          Leading enterprise-wide digital signature transformation using Adobe Sign. Architect REST API integrations with M365 (Power Automate, Logic Apps). Implemented SharePoint-based DMS. Cross-functional stakeholder management and technical documentation.</p>
           <span class="date">Strategic Leadership</span>
         </div>
       </li>
 
       <!-- Item 5: Future -->
-      <li>
-        <span class="line">From 2026</span>
+      <li tabindex="0">
+        <span class="line">From Feb 2027</span>
         <span class="point"></span>
         <div class="description">
           <strong>Available for Strategic (Project) Roles</strong>
           <p style="margin: var(--space-8) 0 0 0; font-size: var(--font-size-xs);">Freelance M365 Specialist</p>
           <p>Open for interim roles, advisory engagements, and implementation projects. <br />
-            Expertise: Enterprise M365 governance, eSignature/DMS solutions, cloud security compliance, and digital transformation strategy.</p>
+          Expertise: Enterprise M365 governance, eSignature/DMS solutions, cloud security compliance, and digital transformation strategy.</p>
           <span class="date">Flexible Engagement</span>
         </div>
       </li>
+
     </ol>
   </section>
 </div>
 
-  <!-- Schedule a meeting! section (existing Calendly embed) -->
-  <div class="container" id="meeting">
-    <h1 class="section-title">Schedule a meeting!</h1>
-    <div class="calendly-inline-widget" data-url="https://calendly.com/florian-christof/30min?hide_event_type_details=1"
-      style="min-width: 320px; height: 750px"></div>
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  </div>
+<!-- Schedule a meeting: Calendly is loaded only after a click -->
+<div class="container" id="meeting">
+  <h2 class="section-title">Schedule a meeting</h2>
+  <p>Book a 30-minute call to discuss your Microsoft 365 project.</p>
+  <p>
+    <a class="btn primary" href="https://calendly.com/florian-christof/30min?hide_event_type_details=1" data-calendly target="_blank" rel="noopener noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Book a time slot
+    </a>
+  </p>
+  <p class="meeting-note">Booking is handled by Calendly. Their scripts are loaded only after you click the button.</p>
+</div>
 
-  <footer class="footer">
-    <div class="container">
-      <span>Contact: <a href="mailto:florian.zimmermann@m365cloud.consulting">florian.zimmermann@m365cloud.consulting</a> | 
-        <a href="https://www.linkedin.com/in/florianzimmermann2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </span>
-      <br>
-      <a href="./Assets/Sites/Datenschutz.html">Datenschutz (Data Privacy)</a> |
-      <a href="./Assets/Sites/Impressum.html">Impressum (Imprint)</a>
-    </div>
-  </footer>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <span>Contact: <a href="mailto:florian.zimmermann@m365cloud.consulting">florian.zimmermann@m365cloud.consulting</a> |
+      <a href="https://www.linkedin.com/in/florianzimmermann2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </span>
+    <br>
+    <a href="./Assets/Sites/Datenschutz.html">Datenschutz (Data Privacy)</a> |
+    <a href="./Assets/Sites/Impressum.html">Impressum (Imprint)</a>
+  </div>
+</footer>
+
+<script>
+  // Calendly popup, loaded on demand (no third-party code on page load)
+  (function () {
+    var CAL_URL = "https://calendly.com/florian-christof/30min?hide_event_type_details=1";
+    var loading = null;
+
+    function loadCalendly() {
+      if (loading) { return loading; }
+      loading = new Promise(function (resolve, reject) {
+        var css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href = "https://assets.calendly.com/assets/external/widget.css";
+        document.head.appendChild(css);
+
+        var js = document.createElement("script");
+        js.src = "https://assets.calendly.com/assets/external/widget.js";
+        js.onload = resolve;
+        js.onerror = reject;
+        document.head.appendChild(js);
+      });
+      return loading;
+    }
+
+    function openCalendly(event) {
+      // Let "open in new tab" gestures work normally
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.button === 1) { return; }
+      event.preventDefault();
+      loadCalendly()
+        .then(function () { Calendly.initPopupWidget({ url: CAL_URL }); })
+        .catch(function () { window.open(CAL_URL, "_blank", "noopener"); });
+    }
+
+    var triggers = document.querySelectorAll("[data-calendly]");
+    for (var i = 0; i < triggers.length; i++) {
+      triggers[i].addEventListener("click", openCalendly);
+    }
+  })();
+</script>
 
 </body>
 </html>
